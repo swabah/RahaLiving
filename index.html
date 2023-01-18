@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Raha Living</title>
+  <link rel="icon" href="/img/logo_raha_living-removebg-preview.png" type="image/icon type">
+   <script src="https://cdn.tailwindcss.com"></script>   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Cairo+Play:wght@300;400&family=Noto+Kufi+Arabic:wght@300;400;500&family=Readex+Pro:wght@300;400&family=Reem+Kufi&family=Roboto+Condensed:ital,wght@1,300&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<!-- npx tailwindcss -i ./input.css -o ./dist/output.css --watch -->
+<body class="relative h-auto  flex flex-col font-sans-serif2 m-0 p-0">
+  <nav id="nav" class="w-full relative z-50">
+    <div id="Nav-section" class="flex  bg-[#00203FFF] w-full items-center h-16 px-5  md:px-12 lg:px-14 xl:px-24 translate  transition-all duration-100  justify-between">
+      <div id="Navbar-left" class="flex cursor-pointer flex-col items-start justify-center">
+        <a href="index.html">
+        <img class="md:w-3/3 md:h-8 h-[1.75rem] w-full" src="/img/icon raha dup.png" alt="">
+        </a>
+        <!-- <h2 class=" text-white  font-medium pl-12 text-xs capitalize">Home Decor</h2> -->
+      </div>
+      <div class="relative  space-x-5 hidden md:flex items-center justify-end">
+        <a class="capitalize text-sm transition lg:text-base text-white font-medium hover:text-[#ADEFD1FF] " href="index.html">home</a>
+          <div class="relative ">
+            <div id="dropdownInterior" class="flex  items-center justify-center space-x-0.5">
+                  <a href="Interior.html" id="Interior" class="capitalize cursor-pointer  transition text-sm lg:text-base text-white hover:text-[#ADEFD1FF]  font-medium" >Interior Designs</a>
+                  <a  href="#"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-4 mt-1  flex stroke-white hover:text-[#ADEFD1FF] "><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>   </a>              
+                  <a id="arrowTop" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-4 mt-1  hidden stroke-white hover:text-[#ADEFD1FF] "><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /> </svg> </a>              
+            </div>
+            <div id="dropdown-Design" class="hidden absolute w-64 top-11 z-10">
+                <div class="flex flex-col w-full h-full p-3 transition items-start justify-center space-y-1 bg-[#00203FFF] border-[#ADEFD1FF] border-t-2 rounded-b-md">
+                  <a class="px-3 font-sans-serif4 hover:bg-[#ADEFD1FF] bg-opacity-20 h-auto transition text-white hover:text-[#00203FFF]  w-full py-2 focus:ring-1 focus:ring-[#ADEFD1FF]  rounded" href="GlassWork.html">Glass work</a>
+                  <a class="px-3 font-sans-serif4 hover:bg-[#ADEFD1FF] bg-opacity-20 h-auto transition text-white hover:text-[#00203FFF]  w-full py-2 focus:ring-1 focus:ring-[#ADEFD1FF]  rounded" href="Officespace.html"> Office Space</a>
+                  <a class="px-3 font-sans-serif4 hover:bg-[#ADEFD1FF] bg-opacity-20 h-auto transition text-white hover:text-[#00203FFF]  w-full py-2 focus:ring-1 focus:ring-[#ADEFD1FF]  rounded" href="Kitchen.html">Kitchen</a>
+                    <a class="px-3 font-sans-serif4 hover:bg-[#ADEFD1FF] bg-opacity-20 h-auto transition text-white hover:text-[#00203FFF]  w-full py-2 focus:ring-1 focus:ring-[#ADEFD1FF]  rounded" href="BedRoom.html">Bed room</a>
+                    <a class="px-3 font-sans-serif4 hover:bg-[#ADEFD1FF] bg-opacity-20 h-auto transition text-white hover:text-[#00203FFF]  w-full py-2 focus:ring-1 focus:ring-[#ADEFD1FF]  rounded" href="LivingRoom.html">Living room</a>
+                    <a class="px-3 font-sans-serif4 hover:bg-[#ADEFD1FF] bg-opacity-20 h-auto transition text-white hover:text-[#00203FFF]  w-full py-2 focus:ring-1 focus:ring-[#ADEFD1FF]  rounded" href="kids.html">Kids Room</a>
+                </div>
+            </div>
+        </div>
+        <a id="trade" class="capitalize text-sm lg:text-base text-white  hover:text-[#ADEFD1FF] transition font-medium" href="Trade.html">trade</a>
+        <a id="About" class="capitalize text-sm lg:text-base text-white  hover:text-[#ADEFD1FF] transition font-medium" href="About.html">About </a>
+        <a id="contact" class="capitalize text-sm lg:text-base text-white  hover:text-[#ADEFD1FF] transition font-medium" href="contact.html">contact</a>
+        <div id="numicon"  class="flex transition-transform  items-center justify-center space-x-2 ">
+          <ion-icon class="text-2xl bg-[#ADEFD1FF]  transition hover:bg-[#5fe6a9] active:bg-[#6febb3b8] focus:outline-none cursor-pointer  p-1 rounded-sm text-[#00203FFF] " name="chatbubble-ellipses-outline"></ion-icon>
+          <a id="number" class="capitalize hidden text-sm lg:text-base text-white hover:text-[#ADEFD1FF] transition font-medium lining-nums " href="tel:+91 9400523355">+91 9400523355</a>
+        </div>
+      </div>
+      <script>
+     window.addEventListener('DOMContentLoaded', () => {
+        const icon = document.querySelector("#numicon")
+        const number = document.querySelector("#number")
+
+        icon.addEventListener('click', () =>{
+           number.classList.toggle("hidden")
+           number.classList.toggle("flex")
+        })
+     })
+        
+      </script>
+      <button class="flex md:hidden items-center justify-end">
+        <a id="menuBtn" class="transition w-auto h-auto">
+            <ion-icon class="text-2xl text-white hover:text-[#ADEFD1FF] " name="grid-outline"></ion-icon>
+        </a>
+        <div id="menuDropdown" class=" hidden flex-col items-center justify-center top-0 rounded right-0 text-start absolute w-full px-3 h-auto py-5 bg-[#00203FFF] ">
+          <div class="px-6 flex items-center justify-between py-2 rounded-t-md hover:bg-[#00203FFF] hover:text-[#ADEFD1FF] transition-all   text-[#00203FFF] bg-[#ADEFD1FF]  w-full h-auto">
+            <a  class="  w-6/7 h-auto transition" href="Interior.html">Interior Designs</a>
+            <ion-icon id="mdInterior" class="text-xl p-1 px-1.5 rounded-sm w-1/7 bg-[#adefd16e] hover:bg-[#ADEFD1FF] hover:text-[#00203FFF] transition duration-75"   name="chevron-down-outline"></ion-icon>
+          </div>
+            <div id="mdInteriordropdown" class="hidden py-5 flex-col items-center justify-between  text-[#ADEFD1FF] bg-[#00203FFF] w-full h-auto">
+              <a class="px-6 flex items-center justify-between py-2 transition  bg-[#00203FFF] hover:bg-[#22355be8] rounded-md w-full h-auto" href="GlassWork.html">Glass Work<ion-icon  class="text-xl stroke-[#00203FFF]   transition-all duration-75" name="arrow-forward-outline"></ion-icon></a>
+              <a class="px-6 flex items-center justify-between py-2 transition  bg-[#00203FFF] hover:bg-[#22355be8] rounded-md w-full h-auto" href="Officespace.html"> Office Space<ion-icon  class="text-xl stroke-[#00203FFF]   transition-all duration-75" name="arrow-forward-outline"></ion-icon></a>
+              <a class="px-6 flex items-center justify-between py-2 transition  bg-[#00203FFF] hover:bg-[#22355be8] rounded-md w-full h-auto" href="Kitchen.html">Kitchen<ion-icon class="text-xl stroke-[#00203FFF]   transition-all duration-75"  name="arrow-forward-outline"></ion-icon></a>
+              <a class="px-6 flex items-center justify-between py-2 transition  bg-[#001f3fa4] hover:bg-[#22355be8] rounded-md w-full h-auto" href="BedRoom.html">Bed Room<ion-icon class="text-xl stroke-[#00203FFF]   transition-all duration-75"  name="arrow-forward-outline"></ion-icon></a>
+              <a class="px-6 flex items-center justify-between py-2 transition  bg-[#00203FFF] hover:bg-[#22355be8] rounded-md w-full h-auto" href="LivingRoom.html">Living Room<ion-icon  class="text-xl stroke-[#00203FFF]   transition-all duration-75" name="arrow-forward-outline"></ion-icon></a>
+              <a class="px-6 flex items-center justify-between py-2 transition  bg-[#00203FFF] hover:bg-[#22355be8] rounded-md w-full h-auto" href="kids.html">kids Room<ion-icon  class="text-xl stroke-[#00203FFF]   transition-all duration-75" name="arrow-forward-outline"></ion-icon></a>
+            </div>
+            <a id="tradeMd" class="px-6 flex items-center justify-between py-2  hover:bg-[#00203FFF] hover:text-[#ADEFD1FF] transition  text-[#00203FFF] bg-[#ADEFD1FF]  w-full h-auto" href="Trade.html">trade<ion-icon class="text-xl stroke-[#00203FFF]   transition-all duration-75"  name="arrow-forward-outline"></ion-icon></a>
+            <a id="About" class="px-6 flex items-center justify-between py-2  hover:bg-[#00203FFF] hover:text-[#ADEFD1FF] transition  text-[#00203FFF] bg-[#ADEFD1FF]  w-full h-auto" href="About.html">About us<ion-icon class="text-xl stroke-[#00203FFF]   transition-all duration-75"  name="arrow-forward-outline"></ion-icon></a>
+            <a id="contactMd" class="px-6 flex items-center justify-between py-2  hover:bg-[#00203FFF] hover:text-[#ADEFD1FF] transition rounded-b-md   text-[#00203FFF] bg-[#ADEFD1FF]  w-full h-auto" href="contact.html">Contact us<ion-icon class="text-xl stroke-[#00203FFF]   transition-all duration-75"  name="arrow-forward-outline"></ion-icon></a>
+            <!-- <a id="numberMD" class="px-6 flex items-center justify-between py-2  hover:bg-[#00203FFF] hover:text-[#ADEFD1FF] transition-all rounded-b-md  text-[#00203FFF] bg-[#ADEFD1FF]  w-full h-auto" href="">+91 9400523355<ion-icon  class="text-xl stroke-[#00203FFF]   transition-all duration-75" name="arrow-forward-outline"></ion-icon></a> -->
+        </div>
+      </button>
+    </div>
+  </nav>
+  <script>
+     window.onscroll = function () {
+      scrollFunction()
+    };
+     window.addEventListener('scroll', () => {
+         const nav = document.querySelector('#Nav-section')
+    
+           if (window.scrollY > 850 ) {
+            nav.classList.add("fixed")
+          } else if (window.scrollY < 850 ) {
+            nav.classList.remove("fixed")
+          }
+          
+     })
+    function scrollFunction() {
+      
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    
+  </script>
+  <script>
+     window.addEventListener('DOMContentLoaded', () => {
+            const Interior  = document.querySelector('#mdInterior')
+            const Interiordropdown = document.querySelector('#mdInteriordropdown')
+            const FirstSection = document.querySelector('#FirstSection')
+
+            Interior.addEventListener('click', () => {
+                Interiordropdown.classList.toggle('hidden')
+                Interiordropdown.classList.toggle('flex')
+            })
+        })
+  </script>
+  <script>
+     window.addEventListener('DOMContentLoaded', () => {
+            const menuBtn  = document.querySelector('#menuBtn')
+            const menuDropdown = document.querySelector('#menuDropdown')
+            const FirstSection = document.querySelector('#FirstSection')
+            const secendSection = document.querySelector('#secendSection')
+            const thirdSection = document.querySelector('#thirdSection')
+            const fourthSection = document.querySelector('#fourthSection')
+            const FivethSection = document.querySelector('#FivethSection')
+
+            menuBtn.addEventListener('click', () => {
+                menuDropdown.classList.toggle('hidden')
+                menuDropdown.classList.toggle('flex')
+            })
+            FirstSection.addEventListener('mousemove', () =>{
+                menuDropdown.classList.add('hidden')
+            })
+            secendSection.addEventListener('mousemove', () =>{
+              menuDropdown.classList.add('hidden')
+            })
+            thirdSection.addEventListener('mousemove', () =>{
+              menuDropdown.classList.add('hidden')
+            })
+            fourthSection.addEventListener('mousemove', () =>{
+              menuDropdown.classList.add('hidden')
+            })
+            FivethSection.addEventListener('mousemove', () =>{
+              menuDropdown.classList.add('hidden')
+            })
+        })
+  </script>
+  <script>
+     window.addEventListener('DOMContentLoaded', () => {
+            const dropdownInterior  = document.querySelector('#dropdownInterior')
+            const Interior  = document.querySelector('#Interior')
+            const item1drop = document.querySelector('#dropdown-Design')
+            const FirstSection = document.querySelector('#FirstSection')
+            const Navbarleft = document.querySelector('#Navbar-left')
+            const About = document.querySelector('#About')
+            const trade = document.querySelector('#trade')
+            const contact = document.querySelector('#contact')
+            const number = document.querySelector('#number')
+
+            dropdownInterior.addEventListener('mousemove', () => {
+              item1drop.classList.toggle('hidden')
+              item1drop.classList.toggle('flex')
+            })
+            
+            FirstSection.addEventListener('mousemove', () =>{
+              item1drop.classList.add('hidden')
+            })
+            Interior.addEventListener('mousemove', () =>{
+              item1drop.classList.add('hidden')
+            })
+            Navbarleft.addEventListener('mousemove', () =>{
+              item1drop.classList.add('hidden')
+            })
+            About.addEventListener('mousemove', () =>{
+              item1drop.classList.add('hidden')
+            })
+            trade.addEventListener('mousemove', () =>{
+              item1drop.classList.add('hidden')
+            })
+            contact.addEventListener('mousemove', () =>{
+              item1drop.classList.add('hidden')
+            })
+            number.addEventListener('mousemove', () =>{ 
+              item1drop.classList.add('hidden')
+            })
+        })
+  </script>
+  <div class=" left-0 z-50 bottom-20 fixed">
+    <ion-icon id="subicon"  class="transition duration-700   bg-[#79eeb9] hover:bg-[#5fe6a9] active:bg-[#6febb3]  text-[#00203FFF] font-semibold cursor-pointer rounded-r-md text-3xl py-1  px-1"  name="chevron-forward-outline"></ion-icon>
+  </div>
+  <section id="subarea" class="fixed -translate-x-[600px] transition flex items-center justify-center duration-700 z-30 left-4 bottom-14 ">
+    <div class="bg-gradient-to-r from-rose-100 to-teal-100 rounded-b-xl rounded-l-xl border  shadow-xl p-2 px-3 max-w-md">
+      <div id="subText" class="relative  flex flex-col items-center">
+        <h1 class="font-bold text-xl flex mt-1 text-gray-700 w-full text-center">Email Subscription !?</h1>
+        <ion-icon id="subclose" class="absolute bg-gradient-to-l from-teal-100 to-teal-100 transition duration-700  cursor-pointer text-2xl -top-14 rounded-t-xl rounded-r-xl  p-2  text-red-800 -right-3.5" name="close-circle-outline"></ion-icon>
+        <form action="" name="subscription" class="w-full flex mt-2 space-x-1">
+          <input name="Email" type="email" placeholder="example@gmail" title="please enter valid email [test@test.com]." required pattern="[^ @]*@[^ @]*[.com]" class="border-2 placeholder:text-sm rounded-lg w-full h-9 px-4 text-[#00203FFF]  peer peer-invalid:visible  block  py-2 bg-white  border-slate-300  text-sm shadow-sm placeholder-slate-400
+          focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+          disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+          invalid:border-pink-500 invalid:text-pink-600
+          focus:invalid:border-pink-500 focus:invalid:ring-pink-500">
+          <button><ion-icon class="text-[#ADEFD1FF] bg-[#00203FFF]  font-semibold rounded-md text-3xl py-0.5 px-1" name="navigate-circle-outline"></ion-icon></button>
+        </form>
+      </div>  
+      <p id="subthanks" class="text-xs transition duration-500  w-full items-center font-medium text-green-600"></p>
+  </section>
+  <script>
+        const icon =document.querySelector("#subicon")
+        const subarea = document.getElementById("subarea")
+        const subclose =document.querySelector("#subclose")
+
+        icon.addEventListener("click",function(){
+          subarea.classList.add('translate-x-0')
+          icon.classList.add("-translate-x-32")
+        })
+        subclose.addEventListener("click",function(){
+          subarea.classList.remove('translate-x-0')
+          icon.classList.remove("-translate-x-32")
+        })
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzpTr-fnaoV00w6Ggc11aqpECMxYW7dpzwkQf0etu9srCMEOq0XFqzrGsDWyZRaxbo6/exec'
+        const form = document.forms['subscription']
+        const subthanks = document.getElementById("subthanks")
+        const subText =document.querySelector("#subText")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(Response => {
+              console.log('success');
+                subthanks.innerHTML = '"Thanks For Your Subscription !"'
+                subText.classList.add("hidden",DelayNode = 4000)
+                subarea.classList.add("w-full")
+              setTimeout(function () {
+                 subthanks.innerHTML = ''  
+                 subarea.classList.add("hidden")
+              },4000) 
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+  </script>
+  <script>
+        
+  </script> 
+  <section id="FirstSection" style="background-image: url('/img/pexels-maksim-goncharenok-4352247.jpg');" class=" bg-center bg-no-repeat bg-cover w-auto pb-24 lg:pb-0 h-[530px] lg:h-[770px] flex flex-col items-center justify-start px-3 md:px-8 lg:px-12 xl:px-24">
+        <div  class="w-full  h-auto bg-no-repeat flex-col flex items-center text-center justify-center md:items-start md:text-start md:pl-20 lg:pl-40 mt-32 lg:mt-44 ">
+              <div class="w-auto space-x-2 hover:text-[#ADEFD1FF] flex items-center justify-between h-auto p-1  rounded-lg">
+                <p class=" capitalize  text-[#00203FFF] font-medium text-xs  md:text-sm "> <span class="typed-text"></span><span class="cursor">&nbsp</span></p>
+              </div>
+              <h2 class="mt-2 w-[300px] md:w-[500px] lg:w-[700px] leading-none text-[#00203FFF] text-4xl md:text-5xl lg:text-7xl tracking-wide  text-white font-bold ">Modern Design <span class="">Solutions!</span></h2>
+        </div>
+        <div  class="w-full  h-auto flex-col flex items-center text-start justify-center md:justify-start  md:pl-20 lg:pl-40">
+           <div class="w-auto md:w-full  h-auto flex-col flex items-start text-start justify-center md:justify-start pt-7 md:pt-16 lg:pt-20">
+             <div class="relative  flex flex-col items-center md:items-start justify-center">
+                 <div class="w-auto p-1.5 px-0.5 md:px-3 rounded-md flex items-center ring-1 ring-[#00203FFF] justify-center text-center h-auto space-x-0.5 md:space-x-2 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3 md:w-5 md:h-5 stroke-[#00203FFF]">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0" />
+                    </svg>        
+                      <h1 class=" text-[#00203FFF]  font-medium font-sans-serif1 text-xs md:text-sm">Experienced professionals in designing and arts.</h1>
+                      <!-- <img class="w-32 -z-10 -left-20 rotate-45 -top-10 absolute" src="https://o.remove.bg/downloads/072c99b4-dca9-41fb-88df-a99ed2e5377c/images-removebg-preview.png" alt=""> -->
+                </div>
+                <div class="flex text-center  justify-center items-center w-full h-auto space-x-1 mt-2 ">
+                   <div class="relative flex text-[#00203FFF] text-xs md:text-sm  font-medium capitalize">
+                    <!-- <ion-icon class="w-6 h-6" name="location-outline"></ion-icon> -->
+                     <span class="flex  h-3 w-3">
+                        <span class="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-red-600 -z-10 opacity-75 "></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500 mb-2"></span>
+                     </span>
+                    </div>
+                   <h2 class=" text-[#00203FFF] text-xs md:text-sm text-white  font-medium capitalize">V.M Arcade, Wayanad Road, Chelavoor, Kozhikode</h2>
+                </div>
+                <div class="w-full cursor-pointer flex items-center justify-center  pt-7 ">
+                  <a href="#fourthSection" class="flex items-center justify-center space-x-2">
+                    <p class="capitalize text-[#00203FFF] text-lg pt-1 border-b-2 border-[#00203FFF]  pb-1.5 font-medium " href="#">See our projects</p>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-[#00203FFF] animate-ping ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+                    </svg>
+                  </a>
+                </div>
+             </div>
+           </div>
+      </div>
+    </div>
+
+
+  </section>
+  <section  id="secendSection" class="w-full h-auto flex flex-col items-center justify-center ">
+   <div class="bg-[#00203FFF]  w-full h-full  flex flex-col items-center justify-center py-5 xl:py-12 px-5 xl:px-12 2xl:px-24">
+    <div class="w-[280px] md:w-[400px] lg:w-[750px] xl:w-[1050px]  h-auto flex flex-col items-center justify-center space-y-0.5 lg:space-y-0">
+      <p class="w-[280px] md:w-[400px] lg:w-[750px] xl:w-[1050px] lg:pl-4 xl:pl-12 text-[#fff] text-center lg:text-start  text-xs md:text-sm xl:text-lg  font-thin ">For Your Dream House</p>
+      <h2 class="w-[280px] md:w-[400px] lg:w-[750px]  xl:w-[1050px]  text-[#6ae2ac] text-center text-base md:text-4xl xl:text-5xl  font-medium ">Interior Designing Firm Based In Kozhikode</h2>
+      <h2 class="w-[280px] md:w-[400px] lg:w-[750px]  xl:w-[1050px]  text-[#6ae2ac] text-center text-xs md:text-sm xl:text-xl tracking-wider xl:mt-0.5 font-thin ">In The beatiful city of kozhikode, we have just begun to make every house simple and beautiful.</h2>
+      <p class="w-[280px] md:w-[400px] lg:w-[750px] xl:w-[1050px]  text-[#fff] lg:pr-4 xl:pr-12 pt-1 tracking-wider text-center lg:text-end  text-xs md:text-xs xl:text-md  font-thin ">DO SOMETHING CREATIVE EVERYDAY</p>
+    </div>
+   </div>
+    <div style="background-image: url('bg\ -secend\ setion.png');"  class=" md:bg-center bg-no-repeat md:bg-cover  w-full h-full  flex flex-col items-center justify-center space-y-16 md:space-y-0 pb-16 lg:pb-44 px-5">
+      <!-- <div class="w-[1050px] h-[590px]">
+        <video class="w-full h-full rounded-lg  object-cover" src="/img/321052994_945131243559055_4316437265300679888_n.mp4"></video>
+      </div> -->
+      <div class="mt-10 w-full h-full  flex flex-col items-center justify-center ">
+            <div class=" w-full h-full  flex flex-wrap items-start justify-center ">
+                <div class="flex w-44 md:w-44 lg:w-52 xl:w-64 h-auto flex-col text-center rounded-lg  items-center justify-evenly p-5 ">
+                   <h1 class="text-sm md:text-base lg:text-xl xl:text-2xl text-[#00203FFF] py-1 font-medium capitalize">Building Planning</h1>
+                  <img class="w-7 md:w-10 xl:w-14 grayscale-50 mt-2 md:mt-3 xl:mt-4" src="https://rahaliving.com/wp-content/uploads/2018/10/planner-free-img-1.png" alt="">
+                  <p class="pt-1 md:pt-2 text-[#00203FFF] text-xs xl:text-base md:font-thin">Share your ideas and we will enhance your idea into an amazing Masterpiece.</p>
+                </div>
+                <div class="flex w-44 md:w-44 lg:w-52 xl:w-64 h-auto flex-col text-center rounded-lg  items-center justify-evenly p-5 ">
+                   <h1 class="text-sm md:text-base lg:text-xl xl:text-2xl text-[#00203FFF] py-1 font-medium capitalize">Interiors Spaces</h1>
+                  <img class="w-7 md:w-10 xl:w-14 grayscale-50 mt-2 md:mt-3 xl:mt-4" src="https://rahaliving.com/wp-content/uploads/2018/10/interior-free-img-1.png" alt="">
+                  <p class="pt-1 md:pt-2 text-[#00203FFF] text-xs xl:text-base md:font-thin">Management of space is a very fundamental element in interior designing</p>
+                </div>
+                <div class="flex w-44 md:w-44 lg:w-52 xl:w-64 h-auto flex-col text-center rounded-lg  items-center justify-evenly p-5 ">
+                   <h1 class="text-sm md:text-base lg:text-xl xl:text-2xl text-[#00203FFF] py-1 font-medium capitalize">Quality products</h1>
+                  <img class="w-7 md:w-10 xl:w-14 grayscale-50 mt-2 md:mt-3 xl:mt-4" src="https://rahaliving.com/wp-content/uploads/2018/10/real-estate-free-img-1.png" alt="">
+                  <p class="pt-1 md:pt-2 text-[#00203FFF] text-xs xl:text-base md:font-thin">We provide good branded materials only to renovate and design.</p>
+                </div>
+                <div class="flex w-44 md:w-44 lg:w-52 xl:w-64 h-auto flex-col text-center rounded-lg  items-center justify-evenly p-5 ">
+                   <h1 class="text-sm md:text-base lg:text-xl xl:text-2xl text-[#00203FFF] py-1 font-medium capitalize">Free Consultation</h1>
+                  <img class="w-7 md:w-10 xl:w-14 grayscale-50 mt-2 md:mt-3 xl:mt-4" src="https://rahaliving.com/wp-content/uploads/2018/10/consultation-free-img-1.png" alt="">
+                  <p class="pt-1 md:pt-2 text-[#00203FFF] text-xs xl:text-base md:font-thin">We are always just a phone call away, don't hesitate to call.</p>
+                </div>
+            </div>
+      </div>
+      <div class="w-full  md:mt-24 lg:mt-36 xl:mt-48  h-full space-x-0 flex flex-col lg:flex-row items-center justify-center space-y-8 lg:space-y-0">
+        <div class="lg:w-1/2 h-auto flex items-center justify-center md:justify-end" >
+            <div class="flex flex-wrap md:grid md:grid-cols-[8rem,8rem,8rem] md:grid-rows-[8rem,8rem] xl:grid-cols-[10rem,10rem,10rem] xl:grid-rows-[10rem,10rem] h-auto gap-3 xl:gap-5 w-full items-center justify-center md:justify-end">
+              <a href="GlassWork.html">
+                <div class="relative cursor-pointer shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                  <img  class="w-full h-full object-fill rounded-xl" src="https://www.sageglass.com/sites/default/files/styles/mirror/public/2022-10/DMK_SAGE_GLATT_15-opt.jpg?h=170ba4b8&itok=LATNhsmv" alt="">
+                  <div class="w-full h-full absolute inset-0 hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70 rounded-xl transition flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="aperture-outline"></ion-icon></div>
+                  </div>
+              </a>
+              <a href="Officespace.html">
+                <div class="relative cursor-pointer shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                  <img  class="w-full h-full object-cover rounded-xl" src="https://www.bergerpaints.com/blog/wp-content/uploads/2022/04/Office-room.png" alt="">
+                  <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="aperture-outline"></ion-icon></div>
+                </div>
+              </a>
+              <a href="Kitchen.html">
+                <div class="relative cursor-pointer shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                  <img  class="w-full h-full object-cover rounded-xl" src="https://images.livspace-cdn.com/plain/https://jumanji.livspace-cdn.com/magazine/wp-content/uploads/sites/4/2022/01/13080239/cover-5.jpg" alt="">
+                  <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="aperture-outline"></ion-icon></div>
+                </div>
+              </a>  
+              <a href="BedRoom.html">
+                <div class="relative cursor-pointer shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                  <img  class="w-full h-full object-cover rounded-xl" src="https://amazingarchitecture.com/storage/1019/bedroom-minimalism.jpg" alt="">
+                  <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="aperture-outline"></ion-icon></div>
+                  </div>
+              </a>
+              <a href="LivingRoom.html">
+                <div class="relative cursor-pointer shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                  <img  class="w-full h-full object-cover rounded-xl" src="https://images.unsplash.com/photo-1615529182904-14819c35db37?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGl2aW5nJTIwcm9vbSUyMGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="">
+                  <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="aperture-outline"></ion-icon></div>
+                  </div>
+              </a>
+              <a href="kids.html">
+                <div class="relative cursor-pointer shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                  <img  class="w-full h-full object-fill rounded-xl" src="http://cdn.home-designing.com/wp-content/uploads/2010/06/Boys-Bedroom-on-wheels.jpg" alt="">
+                  <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="aperture-outline"></ion-icon></div>
+                  </div>
+              </a>
+            </div>
+        </div>
+        <div class="lg:w-1/2 h-full lg:pl-8 xl:pl-5 text-center lg:text-start flex flex-col items-center lg:items-start justify-center" >
+            <h1 class="w-[280px] md:w-[400px] lg:w-[350px] xl:w-[500px]  text-xl xl:text-4xl pb-5 md:pb-5 xl:pb-3 text-[#00203FFF]  font-medium " >Interior Design doesn't have to be expensive or complicated! It should be smart & user friendly.</h1>
+            <p class=" w-[280px] md:w-[400px] lg:w-[350px] xl:w-[500px]  text-sm xl:text-lg pb-4 md:pb-7 xl:pb-4  text-[#00203FFF]  font-thin  leading-snug" >At RahaLiving home interiors Chelavoor, we provide individual consultation, design, production, and execution for all residential interiors. From space planning, perceiving suitable furniture for a house</p>
+            <a href="Interior.html">
+              <button class="p-2 px-4 text-[#00203FFF] text-xs xl:text-base  font-medium rounded-md bg-[#79eeb9] hover:bg-[#5fe6a9] active:bg-[#6febb3] focus:outline-none ">
+                Read More
+                </button>
+            </a>
+        </div>
+      </div>
+      
+    </div>
+    
+  </section>
+  <section id="fourthSection"  style="background-image: url('bg\ -secend\ setion.png');" class="md:bg-center bg-no-repeat md:bg-cover w-full h-full  px-5 lg:px-12 xl:px-24 flex flex-col items-center justify-center pb-20 ">
+    <div class="w-full h-full flex flex-col items-center justify-center  text-center">
+        <div  class="w-full h-full flex flex-col items-center text-[#00203FFF] py-3 md:py-8  px-5 md:px-12 text-center  justify-center">
+          <h2 class="text-[#]  text-xs md:text-sm lg:text-lg xl:text-base">Recently</h2>
+           <h2 id="ourProjects"  class="text-[#] text-2xl md:text-3xl lg:text-4xl xl:text-5xl">our projects</h2>
+         </div>
+         
+      <div id="image-container" class=" w-full xl:w-[950px] pt-10 lg:pt-20 h-auto flex flex-wrap gap-8 items-center justify-center">
+        <div class="relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
+          <img class="image hover:scale-125 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/70943079_1408177712671289_2687708907983339520_n.jpg?stp=dst-jpg_s960x960&_nc_cat=106&ccb=1-7&_nc_sid=a26aad&_nc_ohc=B0ndXpoWp-0AX-VgrV1&_nc_ht=scontent.fccj3-1.fna&oh=00_AfDh1XQcS9qL6yBIPl7O3vxA7WWSPvlEnbcNUTHlYwwq-A&oe=63E22978" alt="">
+          <h2  class="absolute cursor-pointer left-2 bottom-2 h-5 xl:h-6 w-auto bg-white hover:bg-[#79eeb9]  active:bg-[#1ef38c]  transition text-[#00203FFF] opacity-100 rounded-full  flex  items-center justify-center md:justify-between px-3  xl:space-x-2  font-medium text-xs  capitalize">Kitchen cabinet, shoba city, thrissur</h2>
+       </div>
+        <div class="relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
+          <img class="image hover:scale-125 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/70189106_1408166709339056_3132076974730641408_n.jpg?stp=dst-jpg_p720x720&_nc_cat=111&ccb=1-7&_nc_sid=a26aad&_nc_ohc=Huu4OdYaXQkAX8_8XfB&_nc_ht=scontent.fccj3-1.fna&oh=00_AfBVFJHaQg9R-okkm5HumKiDl3BlEss8zig31jj_AKggTw&oe=63E2184D" alt="">
+          <h2  class="absolute cursor-pointer left-2 bottom-2 h-5 xl:h-6 w-auto bg-white hover:bg-[#79eeb9]  active:bg-[#1ef38c]  transition text-[#00203FFF] opacity-100 rounded-full  flex  items-center justify-center md:justify-between px-3  xl:space-x-2  font-medium text-xs  capitalize">Wooden Handrail, kalaranthiry</h2>
+          </div>
+        <div class="relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
+          <img class="image hover:scale-125 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/59565573_1302676446554750_893445071213428736_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=7DGykXARvhEAX_T4MQM&tn=xwHAWssqrgu5muM5&_nc_ht=scontent.fccj3-1.fna&oh=00_AfD5rEzl6hhTxoicDcxN1WNU8wJdQizjYbGhhDNGuHSC5A&oe=63E220EB" alt="">
+          <h2  class="absolute cursor-pointer left-2 bottom-2 h-5 xl:h-6 w-auto bg-white hover:bg-[#79eeb9]  active:bg-[#1ef38c] transition text-[#00203FFF] opacity-100 rounded-full  flex  items-center justify-center md:justify-between px-3  xl:space-x-2  font-medium text-xs  capitalize">Modular kitchen, Wayanad</h2>
+        </div>
+        <div class="relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
+          <img class="image hover:scale-125 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/57034809_1289826241173104_7396168579768385536_n.jpg?stp=dst-jpg_p720x720&_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=JnFIBUiCutkAX8IA_WR&_nc_ht=scontent.fccj3-1.fna&oh=00_AfBAoYzGaQ94QKNPv-uzZo1tolnp8QXgjEQrFo1e3dxLEw&oe=63E23B0F" alt="">
+          <h2  class="absolute cursor-pointer left-2 bottom-2 h-5 xl:h-6 w-auto bg-white hover:bg-[#79eeb9]  active:bg-[#1ef38c] transition text-[#00203FFF] opacity-100 rounded-full  flex  items-center justify-center md:justify-between px-3  xl:space-x-2  font-medium text-xs  capitalize">Modular Kitchen, Burj Alhind </h2>
+        </div>
+        <div class="relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
+          <img class="image hover:scale-125 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/45202822_1174895129332883_7150806212068507648_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=AUs5YV-nXvgAX9JYePn&_nc_ht=scontent.fccj3-1.fna&oh=00_AfBi-nRRnSyjM0Vd48Wau7YikBxunaMXeGuDvxOZx5Vnig&oe=63E220A8" alt="">
+          <h2  class="absolute cursor-pointer left-2 bottom-2 h-5 xl:h-6 w-auto bg-white hover:bg-[#79eeb9]  active:bg-[#1ef38c] transition text-[#00203FFF] opacity-100 rounded-full  flex  items-center justify-center md:justify-between px-3  xl:space-x-2  font-medium text-xs  capitalize">Home Decor, Mathara, Calicat</h2>
+        </div>
+        <div class="relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
+          <img class="image hover:scale-125 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/46516607_1190559607766435_8363418184312684544_n.jpg?stp=dst-jpg_p480x480&_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=6mHNVv-mdQ4AX870s5Q&_nc_ht=scontent.fccj3-1.fna&oh=00_AfD0qBV7475_GCTV8aXLF0uLL3WUsLTCzCtcN5GI97bbXQ&oe=63E2277C" alt="">
+          <h2  class="absolute cursor-pointer left-2 bottom-2 h-5 xl:h-6 w-auto bg-white hover:bg-[#79eeb9]  active:bg-[#1ef38c] transition text-[#00203FFF] opacity-100 rounded-full  flex  items-center justify-center md:justify-between px-3  xl:space-x-2  font-medium text-xs  capitalize">Glass Ground, Knwoledge City</h2>
+        </div>
+        <div class="relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
+          <img class="image hover:scale-125 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/45282633_1174901355998927_8639025939344261120_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=4iz39vU5ltYAX_SGyUM&_nc_ht=scontent.fccj3-1.fna&oh=00_AfDOlICci4Bzsfaa5X0l310Dj1yEO5tDThPsFM0XfjoJlQ&oe=63E20ADB" alt="">
+          <h2  class="absolute cursor-pointer left-2 bottom-2 h-5 xl:h-6 w-auto bg-white hover:bg-[#79eeb9]  active:bg-[#1ef38c] transition text-[#00203FFF] opacity-100 rounded-full  flex  items-center justify-center md:justify-between px-3  xl:space-x-2  font-medium text-xs  capitalize">Home Decor, Kozhickode</h2>
+        </div>
+        <div class=" relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
+          <img class="image hover:scale-125 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/46847906_1190559447766451_238110109262151680_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=yi0px95ekVgAX-Ml6Wh&_nc_ht=scontent.fccj3-1.fna&oh=00_AfAt-zQNYaq1tnqE4-52hhWdPbr9XbnhOwJ0YJnZyY3BEg&oe=63E226AF" alt="">
+          <h2  class=" absolute cursor-pointer left-2 bottom-2 h-5 xl:h-6 w-auto bg-white hover:bg-[#79eeb9]  active:bg-[#1ef38c] transition text-[#00203FFF] opacity-100 rounded-full  flex  items-center justify-center md:justify-between px-3  xl:space-x-2  font-medium text-xs  capitalize">BlueBrain center, kuttikattoor</h2>
+        </div>
+              <div id="popup-img" class="fixed  top-0 left-0 bg-[#000000f0]  h-screen w-full z-50 hidden">
+                <img  id="img" class="absolute bottom-56 md:bottom-32 left-8 md:left-16 lg:left-20 xl:top-32 xl:left-56  rounded-xl  w-5/6 h-2/6 md:h-4/6 xl:w-4/6 xl:h-4/6  object-fill" src="https://scontent.fcok2-1.fna.fbcdn.net/v/t1.6435-9/45202822_1174895129332883_7150806212068507648_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=BeAWjkN7QqgAX8tgDO1&_nc_ht=scontent.fcok2-1.fna&oh=00_AfC7L256KtUQjvg4tQ_HB40I5CUiPppE6VQEDfDv2m8JKA&oe=63DC6A28" alt="">
+                <div class="absolute h-auto left-1/2 right-1/2 bottom-20 md:bottom-8 xl:bottom-8 flex items-center justify-center space-x-3">
+                  <span class="text-6xl font-extrabold text-white cursor-pointer mb-2" id="span">&times;</span>
+                  <!-- <ion-icon class="text-3xl w-20 h-20 text-black cursor-pointer mb-2" name="close-circle-outline" id="span"></ion-icon> -->
+                    <a id="download" href="contact.html"  class="p-2  px-4 text-[#00203FFF] cursor-pointer w-auto capitalize text-sm xl:text-base  font-medium rounded-md bg-[#79eeb9] hover:bg-[#5fe6a9] active:bg-[#6febb3] focus:outline-none ">
+                    purchase
+                    </a>
+                </div>
+            </div>
+            <script>
+              document.querySelectorAll("#image-container  .image").forEach(Image => {
+                Image.onclick = () =>{
+                  document.querySelector("#popup-img").style.display ='block'
+                  // document.querySelector("#popup-img #download").innerHTML = Image.getElementsByClassName('.test').innerHTML
+                  document.querySelector("#popup-img #img").src = Image.getAttribute('src')
+                }
+              })
+              document.querySelector("#popup-img #span").onclick = () =>{
+                  document.querySelector("#popup-img").style.display ='none'
+                }
+            </script>
+      </div>
+      <a href="contact.html">
+        <button class="p-2 mt-12 px-4 text-[#00203FFF] w-44 capitalize text-sm xl:text-base  font-medium rounded-md bg-[#79eeb9] hover:bg-[#5fe6a9] active:bg-[#6febb3] focus:outline-none ">
+         Enquiry
+        </button>
+      </a> 
+
+    </div>
+  </section>
+  <footer  id="FivethSection" class="w-full h-auto  bg-[#00203FFF]">
+    <div class="  w-full h-full  transition-all text-[#79eeb9]  p-2 px-5 md:px-12 lg:px-14 xl:px-24">
+      <div class="w-full h-full my-10 flex items-start justify-between">
+        <div class="h-auto w-full  flex flex-col md:flex-row  items-center md:items-start justify-between space-y-7 md:space-y-0 md:space-x-12 xl:space-x-16 ">
+          <div class="w-auto text-sm lg:text-lg font-thin space-y-3 flex flex-col text-start items-center md:items-start justify-center">
+            <h2 class=" pb-5 font-medium  text-white">Get in touch</h2>
+            <p class="flex w-auto h-auto items-start justify-center space-x-2"><ion-icon class="text-2xl text-white" name="wallet-outline"></ion-icon><a class=" " href="">V.M Arcade, Chelavoor, Kozhikode-Wayanad Road, kerala</a></p>
+            <p class="flex w-auto h-auto items-start justify-center space-x-2 "><ion-icon class="text-xl text-white" name="call-outline"></ion-icon><a class="hover:text-white  transition" href="tel:+91 9400523355">+91 9400523355 <br href="tel:+91 8281073564" class="hidden md:flex pr-6 md:pl-0"> +91 8281073564</a></p>
+            <p class="flex w-auto h-auto items-start justify-center space-x-2 "><ion-icon class="text-xl text-white"  name="mail-outline"></ion-icon><a class="hover:text-white  transition" href="mailto:rahaliving@gmail.com">rahaliving@gmail.com</a></p>
+          </div>
+          <div class="w-auto md:w-52 text-sm lg:text-lg  font-thin space-y-2 flex flex-col items-center md:items-start">
+            <p class="  font-medium pb-5 text-white">Interior Designs</p>
+            <a class="hover:text-white transition" href="Interior.html" >Interior</a>
+            <a class="hover:text-white transition" href="Officespace.html">Office Space</a>
+            <a class="hover:text-white transition" href="GlassWork.html" >Glass Space</a>
+            <a class="hover:text-white transition" href="Kitchen.html" >Kitchen</a>
+            <a class="hover:text-white transition" href="LivingRoom.html" >Living Room</a>
+            <a class="hover:text-white transition" href="kids.html" >Kids Room</a>
+            <a class="hover:text-white transition" href="Trade.html" >Bed Room</a>
+          </div>
+          <div class="md:w-32 w-auto text-sm lg:text-lg font-thin space-y-2 flex flex-col items-center md:items-start">
+            <h2 class=" font-medium pb-5 text-white">Information</h2>
+            <a class="hover:text-white transition" href="Trade.html" class="pt-5">Trade</a>
+            <a class="hover:text-white transition" href="About.html">About Us</a>
+            <a class="hover:text-white transition" href="contact.html">Contact us</a>
+            <a></a>
+          </div>
+          <div class="md:w-20 w-auto  flex flex-col items-center justify-center md:justify-start space-y-2">
+            <a class=" capitalize text-[#00203FFF] px-2  lg:px-3.5 text-sm lg:text-base pt-1 w-auto h-auto bg-[#ADEFD1FF] rounded pb-1.5 font-medium " href="https://www.instagram.com/rahaliving/">instagram</a>
+             <div class="w-auto mt-1 flex space-x-1 items-center h-auto">
+                 <a class=" text-base lg:text-lg text-[#ADEFD1FF]" href="https://www.facebook.com/rahaliving/">
+                     <ion-icon name="logo-facebook"></ion-icon>
+                 </a>
+                 <a class=" text-base lg:text-lg  text-[#ADEFD1FF]" href="https://www.instagram.com/rahaliving/">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                 </a>
+                 <a class=" text-base lg:text-lg mb-1  text-[#00203FFF]" href="https://vymaps.com/IN/Raha-Living-1144968025658927/">
+                     <img class="w-4 rounded" src="https://cdn.semrush.com/__static__/semrush-logo-700.jpg" alt="">
+                 </a>
+                 <a class=" text-base lg:text-lg  mb-1  text-[#00203FFF]" href="https://jsdl.in/RSL-LLK1672122564">
+                     <img class="w-4 rounded" src="https://user-images.githubusercontent.com/42868728/70027410-164cdd00-15c8-11ea-9852-6982408e4ea6.png" alt="">
+                 </a>
+               </div>
+           </div>
+        </div>
+        
+      </div>
+
+    </div>
+    <div class="w-full h-full transition-all text-[#79eeb9] flex items-center justify-center md:items-start md:justify-start bg-[#00203FFF]   ">
+        <h1 class="text-xs md:text-base  p-2 px-5 md:px-12 lg:px-14 xl:px-24 font-medium  ">© 2019 at-rahaiving.in All rights reserved<br class="flex md:hidden  "> | Made by <a class="underline pl-1 pt-2" href="https://www.instagram.com/Sw_abah">Sw_abah</a> </h1>
+    </div>
+  </footer>
+
+    <button onclick="topFunction()" id="movetop" class="fixed z-30 right-7 bottom-5 sm:right-12 sm:bottom-6" title="Go to top">
+        <div class=" bg-[#79eeb9] hover:bg-[#5fe6a9] active:bg-[#6febb3] rounded-full p-2  ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-7 hover:text-[#00203FFF]  cursor-pointer text-[#00203FFF] h-7 ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+              </svg>
+        </div>
+     </button>
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("movetop").style.display = "block";
+      } else {
+        document.getElementById("movetop").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+
+</html>

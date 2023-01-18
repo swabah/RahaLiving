@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior:smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade | Raha Living</title>
+    <link rel="icon" href="https://o.remove.bg/downloads/b2821016-4437-44ec-8d35-c761a20c7f10/logo_raha_living-removebg-preview.png" type="image/icon type">
+    <script src="https://cdn.tailwindcss.com"></script>   <!-- <link rel="stylesheet" href="home.css" type="text/css"> -->
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Cairo+Play:wght@300;400&family=Noto+Kufi+Arabic:wght@300;400;500&family=Readex+Pro:wght@300;400&family=Reem+Kufi&family=Roboto+Condensed:ital,wght@1,300&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
+</head>
+<body class="relative h-auto flex flex-col font-sans-serif2 m-0 p-0 bg-gradient-to-r from-rose-100 to-teal-100 ">
+    <nav id="nav" class="w-full relative z-50">
+        <div id="Nav-section" class="flex  bg-[#00203FFF] w-full items-center h-16 px-5  md:px-12 lg:px-14 xl:px-24 translate  transition-all duration-100  justify-between">
+          <div id="Navbar-left" class="flex cursor-pointer flex-col items-start justify-center">
+            <a href="index.html">
+            <img class="md:w-3/3 md:h-8 h-[1.75rem] w-full" src="/img/icon raha dup.png" alt="">
+            </a>
+            <!-- <h2 class=" text-white  font-medium pl-12 text-xs capitalize">Home Decor</h2> -->
+          </div>
+          <div class="relative  space-x-5 hidden md:flex items-center justify-end">
+            <a id="home" class="capitalize text-sm transition lg:text-base text-white font-medium hover:text-[#ADEFD1FF] " href="index.html">home</a>
+              <div class="relative ">
+                <div id="dropdownInterior" class="flex  items-center justify-center space-x-0.5">
+                      <a href="Interior.html" id="Interior" class="capitalize cursor-pointer  transition text-sm lg:text-base text-white hover:text-[#ADEFD1FF]  font-medium" >Interior Designs</a>
+                      <a  href="#"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-4 mt-1  flex stroke-white hover:text-[#ADEFD1FF] "><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>   </a>              
+                      <a id="arrowTop" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-4 mt-1  hidden stroke-white hover:text-[#ADEFD1FF] "><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /> </svg> </a>              
+                </div>
+                <div id="dropdown-Design" class="hidden absolute w-64 top-11 z-10">
+                    <div class="flex flex-col w-full h-full p-3 transition items-start justify-center space-y-1 bg-[#00203FFF] border-[#ADEFD1FF] border-t-2 rounded-b-md">
+                        <a class="px-3 font-sans-serif4 hover:bg-[#ADEFD1FF] bg-opacity-20 h-auto transition text-white hover:text-[#00203FFF]  w-full py-2 focus:ring-1 focus:ring-[#ADEFD1FF]  rounded" href="BedRoom.html">Bed room</a>
+                        <a class="px-3 font-sans-serif4 hover:bg-[#ADEFD1FF] bg-opacity-20 h-auto transition text-white hover:text-[#00203FFF]  w-full py-2 focus:ring-1 focus:ring-[#ADEFD1FF]  rounded" href="Kitchen.html">Kitchen</a>
+                        <a class="px-3 font-sans-serif4 hover:bg-[#ADEFD1FF] bg-opacity-20 h-auto transition text-white hover:text-[#00203FFF]  w-full py-2 focus:ring-1 focus:ring-[#ADEFD1FF]  rounded" href="LivingRoom.html">Living room</a>
+                        <a class="px-3 font-sans-serif4 hover:bg-[#ADEFD1FF] bg-opacity-20 h-auto transition text-white hover:text-[#00203FFF]  w-full py-2 focus:ring-1 focus:ring-[#ADEFD1FF]  rounded" href="kids.html">Kids Room</a>
+                        <a class="px-3 font-sans-serif4 hover:bg-[#ADEFD1FF] bg-opacity-20 h-auto transition text-white hover:text-[#00203FFF]  w-full py-2 focus:ring-1 focus:ring-[#ADEFD1FF]  rounded" href="GlassWork.html">Glass work</a>
+                        <a class="px-3 font-sans-serif4 hover:bg-[#ADEFD1FF] bg-opacity-20 h-auto transition text-white hover:text-[#00203FFF]  w-full py-2 focus:ring-1 focus:ring-[#ADEFD1FF]  rounded" href="Officespace.html"> Office Space</a>
+                    </div>
+                </div>
+            </div>
+            <a id="trade" class="capitalize text-sm lg:text-base text-white  hover:text-[#ADEFD1FF] transition font-medium" href="Trade.html">trade</a>
+            <a id="About" class="capitalize text-sm lg:text-base text-white  hover:text-[#ADEFD1FF] transition font-medium" href="About.html">About </a>
+            <a id="contact" class="capitalize text-sm lg:text-base text-white  hover:text-[#ADEFD1FF] transition font-medium" href="contact.html">contact</a>
+            <div id="numicon"  class="flex transition-transform  items-center justify-center space-x-2 ">
+              <ion-icon class="text-2xl bg-[#ADEFD1FF]  transition hover:bg-[#5fe6a9] active:bg-[#6febb3b8] focus:outline-none cursor-pointer  p-1 rounded-sm text-[#00203FFF] " name="chatbubble-ellipses-outline"></ion-icon>
+              <a id="number" class="capitalize hidden text-sm lg:text-base text-white hover:text-[#ADEFD1FF] transition font-medium lining-nums " href="tel:+91 9400523355">+91 9400523355</a>
+            </div>
+          </div>
+          <script>
+         window.addEventListener('DOMContentLoaded', () => {
+            const icon = document.querySelector("#numicon")
+            const number = document.querySelector("#number")
+    
+            icon.addEventListener('click', () =>{
+               number.classList.toggle("hidden")
+               number.classList.toggle("flex")
+            })
+         })
+            
+          </script>
+          <button class="flex md:hidden items-center justify-end">
+            <a id="menuBtn" class="transition w-auto h-auto">
+                <ion-icon class="text-2xl text-white hover:text-[#ADEFD1FF] " name="grid-outline"></ion-icon>
+            </a>
+            <div id="menuDropdown" class=" hidden flex-col items-center justify-center top-0 rounded right-0 text-start absolute w-full px-3 h-auto py-5 bg-[#00203FFF] ">
+              <a id="home" class="px-6 flex items-center justify-between py-2 rounded-t-md hover:bg-[#00203FFF] hover:text-[#ADEFD1FF] transition  text-[#00203FFF] bg-[#ADEFD1FF]  w-full h-auto" href="index.html">home<ion-icon class="text-xl stroke-[#00203FFF]   transition-all duration-75"  name="arrow-forward-outline"></ion-icon></a>
+              <div class="px-6 flex items-center justify-between py-2  hover:bg-[#00203FFF] hover:text-[#ADEFD1FF] transition-all   text-[#00203FFF] bg-[#ADEFD1FF]  w-full h-auto">
+                <a  class="  w-6/7 h-auto transition" href="Interior.html">Interior Designs</a>
+                <ion-icon id="mdInterior" class="text-xl p-1 px-1.5 rounded-sm w-1/7 bg-[#adefd16e] hover:bg-[#ADEFD1FF] hover:text-[#00203FFF] transition duration-75"   name="chevron-down-outline"></ion-icon>
+              </div>
+                <div id="mdInteriordropdown" class="hidden py-5 flex-col items-center justify-between  text-[#ADEFD1FF] bg-[#00203FFF] w-full h-auto">
+                  <a class="px-6 flex items-center justify-between py-2 transition  bg-[#001f3fa4] hover:bg-[#22355be8] rounded-md w-full h-auto" href="BedRoom.html">Bed Room<ion-icon class="text-xl stroke-[#00203FFF]   transition-all duration-75"  name="arrow-forward-outline"></ion-icon></a>
+                  <a class="px-6 flex items-center justify-between py-2 transition  bg-[#00203FFF] hover:bg-[#22355be8] rounded-md w-full h-auto" href="Kitchen.html">Kitchen<ion-icon class="text-xl stroke-[#00203FFF]   transition-all duration-75"  name="arrow-forward-outline"></ion-icon></a>
+                  <a class="px-6 flex items-center justify-between py-2 transition  bg-[#00203FFF] hover:bg-[#22355be8] rounded-md w-full h-auto" href="LivingRoom.html">Living Room<ion-icon  class="text-xl stroke-[#00203FFF]   transition-all duration-75" name="arrow-forward-outline"></ion-icon></a>
+                  <a class="px-6 flex items-center justify-between py-2 transition  bg-[#00203FFF] hover:bg-[#22355be8] rounded-md w-full h-auto" href="kids.html">kids Room<ion-icon  class="text-xl stroke-[#00203FFF]   transition-all duration-75" name="arrow-forward-outline"></ion-icon></a>
+                  <a class="px-6 flex items-center justify-between py-2 transition  bg-[#00203FFF] hover:bg-[#22355be8] rounded-md w-full h-auto" href="GlassWork.html">Glass Work<ion-icon  class="text-xl stroke-[#00203FFF]   transition-all duration-75" name="arrow-forward-outline"></ion-icon></a>
+                  <a class="px-6 flex items-center justify-between py-2 transition  bg-[#00203FFF] hover:bg-[#22355be8] rounded-md w-full h-auto" href="Officespace.html"> Office Space<ion-icon  class="text-xl stroke-[#00203FFF]   transition-all duration-75" name="arrow-forward-outline"></ion-icon></a>
+                </div>
+                <a id="tradeMd" class="px-6 flex items-center justify-between py-2  hover:bg-[#00203FFF] hover:text-[#ADEFD1FF] transition  text-[#00203FFF] bg-[#ADEFD1FF]  w-full h-auto" href="Trade.html">trade<ion-icon class="text-xl stroke-[#00203FFF]   transition-all duration-75"  name="arrow-forward-outline"></ion-icon></a>
+                <a id="About" class="px-6 flex items-center justify-between py-2  hover:bg-[#00203FFF] hover:text-[#ADEFD1FF] transition  text-[#00203FFF] bg-[#ADEFD1FF]  w-full h-auto" href="About.html">About us<ion-icon class="text-xl stroke-[#00203FFF]   transition-all duration-75"  name="arrow-forward-outline"></ion-icon></a>
+                <a id="contactMd" class="px-6 flex items-center justify-between py-2  hover:bg-[#00203FFF] hover:text-[#ADEFD1FF] transition rounded-b-md   text-[#00203FFF] bg-[#ADEFD1FF]  w-full h-auto" href="contact.html">Contact us<ion-icon class="text-xl stroke-[#00203FFF]   transition-all duration-75"  name="arrow-forward-outline"></ion-icon></a>
+                <!-- <a id="numberMD" class="px-6 flex items-center justify-between py-2  hover:bg-[#00203FFF] hover:text-[#ADEFD1FF] transition-all rounded-b-md  text-[#00203FFF] bg-[#ADEFD1FF]  w-full h-auto" href="">+91 9400523355<ion-icon  class="text-xl stroke-[#00203FFF]   transition-all duration-75" name="arrow-forward-outline"></ion-icon></a> -->
+            </div>
+          </button>
+        </div>
+      </nav>
+      <script>
+         window.addEventListener('DOMContentLoaded', () => {
+                const Interior  = document.querySelector('#mdInterior')
+                const Interiordropdown = document.querySelector('#mdInteriordropdown')
+                const FirstSection = document.querySelector('#FirstSection')
+    
+                Interior.addEventListener('click', () => {
+                    Interiordropdown.classList.toggle('hidden')
+                    Interiordropdown.classList.toggle('flex')
+                })
+            })
+      </script>
+      <script>
+        window.addEventListener('DOMContentLoaded', () => {
+       const menuBtn  = document.querySelector('#menuBtn')
+       const menuDropdown = document.querySelector('#menuDropdown')
+       const FirstSection = document.querySelector('#FirstSection')
+       const secendSection = document.querySelector('#secendSection')
+       const thirdSection = document.querySelector('#thirdSection')
+       const fourthSection = document.querySelector('#fourthSection')
+       const FivethSection = document.querySelector('#FivethSection')
+       const sixthSection = document.querySelector('#sixthSection') 
+       const leventhSection = document.querySelector('#leventhSection')  
+       const eightSection = document.querySelector('#eightSection')  
+
+       menuBtn.addEventListener('click', () => {
+           menuDropdown.classList.toggle('hidden')
+           menuDropdown.classList.toggle('flex')
+       })
+       FirstSection.addEventListener('mousemove', () =>{
+           menuDropdown.classList.add('hidden')
+       })
+       secendSection.addEventListener('mousemove', () =>{
+         menuDropdown.classList.add('hidden')
+       })
+       thirdSection.addEventListener('mousemove', () =>{
+         menuDropdown.classList.add('hidden')
+       })
+       fourthSection.addEventListener('mousemove', () =>{
+         menuDropdown.classList.add('hidden')
+       })
+       FivethSection.addEventListener('mousemove', () =>{
+         menuDropdown.classList.add('hidden')
+       })
+       sixthSection.addEventListener('mousemove', () =>{
+         menuDropdown.classList.add('hidden')
+       })
+       leventhSection.addEventListener('mousemove', () =>{
+         menuDropdown.classList.add('hidden')
+       })
+       eightSection.addEventListener('mousemove', () =>{
+         menuDropdown.classList.add('hidden')
+       })
+   })
+      </script>
+       <script>
+        window.addEventListener('DOMContentLoaded', () => {
+               const dropdownInterior  = document.querySelector('#dropdownInterior')
+               const Interior  = document.querySelector('#Interior')
+               const item1drop = document.querySelector('#dropdown-Design')
+               const FirstSection = document.querySelector('#FirstSection')
+               const Navbarleft = document.querySelector('#Navbar-left')
+               const About = document.querySelector('#About')
+               const home = document.querySelector('#home')
+               const trade = document.querySelector('#trade')
+               const contact = document.querySelector('#contact')
+               const number = document.querySelector('#number')
+   
+               dropdownInterior.addEventListener('mousemove', () => {
+                 item1drop.classList.toggle('hidden')
+                 item1drop.classList.toggle('flex')
+               })
+               
+               FirstSection.addEventListener('mousemove', () =>{
+                 item1drop.classList.add('hidden')
+               })
+               Interior.addEventListener('mousemove', () =>{
+                 item1drop.classList.add('hidden')
+               })
+               Navbarleft.addEventListener('mousemove', () =>{
+                 item1drop.classList.add('hidden')
+               })
+               home.addEventListener('mousemove', () =>{
+                 item1drop.classList.add('hidden')
+               })
+               About.addEventListener('mousemove', () =>{
+                 item1drop.classList.add('hidden')
+               })
+               trade.addEventListener('mousemove', () =>{
+                 item1drop.classList.add('hidden')
+               })
+               contact.addEventListener('mousemove', () =>{
+                 item1drop.classList.add('hidden')
+               })
+               number.addEventListener('mousemove', () =>{ 
+                 item1drop.classList.add('hidden')
+               })
+           })
+     </script> 
+  <!---->
+      
+    <section id="FirstSection">
+      
+        <div class="flex flex-col items-center justify-center  w-auto  h-auto px-5  md:px-12 lg:px-14 xl:px-24 py-12 md:py-32">
+          <div class=" w-full   h-auto flex items-center justify-center">
+            <h2 class="text-3xl md:text-4xl xl:text-5xl font-medium capitalize text-[#00203FFF] text-center">  glass and intirior<br class="flex md:hidden"> accessories</h2>
+          </div>
+          <div class=" pt-16 md:pt-16 flex flex-col space-y-5 md:space-y-0 md:flex-row items-center justify-center md:justify-evenly w-auto md:w-[650px]">
+            <div class="w-full relative flex flex-col items-center justify-center text-center  space-y-4">
+              <h2 id="clearBtn" class="flex  items-center justify-center  text-center cursor-pointer text-lg md:text-xl font-light border-b-2 border-[#00203FFF] pb-2  rounded-t-md active:bg-[#ffffff5b] focus:outline-none pt-2 p-2">Claer Glass <ion-icon id="arrowright1" class="flex text-2xl pl-1  text-[#00203FFF] transition-transform duration-100" id="icon1" name="chevron-forward-outline"></ion-icon><ion-icon id="arrowbottom1" class="hidden text-2xl pl-1 pt-1 text-red-700 transition-transform duration-100" name="close-circle-outline"></ion-icon></h2>
+              <ul id="clearDrop" class=" hidden absolute bg-[#00203FFF] text-white top-7 w-52 md:w-72 z-10 border-t-2 border-[#00203FFF] flex-col transition-transform text-sm md:text-lg items-start justify-center  text-start p-5">
+                <li class="border-t-[1px] md:border-none   border-[#22355be8] p-2 w-full"> <span class="text-[#ADEFD1FF]" >  4 </span>mm at <span class="text-[#ADEFD1FF]" >  Rs.32 </span>per sq.ft</li>
+                <li class="border-t-[1px] md:border-none   border-[#22355be8] p-2 w-full"> <span class="text-[#ADEFD1FF]" >  5</span>mm at  <span class="text-[#ADEFD1FF]" > Rs.40</span> per sq.ft</li>
+                <li class="border-t-[1px] md:border-none   border-[#22355be8] p-2 w-full"> <span class="text-[#ADEFD1FF]" >  6</span>mm at  <span class="text-[#ADEFD1FF]" >Rs.48 </span> per sq.ft</li>
+                <li class="border-t-[1px] md:border-none   border-[#22355be8] p-2 w-full"> <span class="text-[#ADEFD1FF]" >  8</span>mm at  <span class="text-[#ADEFD1FF]" >Rs.67</span>  per sq.ft</li>
+                <li class="border-t-[1px] md:border-none   border-[#22355be8] p-2 w-full"> <span class="text-[#ADEFD1FF]" >  10</span>mm at <span class="text-[#ADEFD1FF]" >Rs.84</span>  per sq.ft</li>
+                <li class="border-t-[1px] md:border-none   border-b-[1px]  border-[#22355be8] p-2 w-full"> <span class="text-[#ADEFD1FF]" >  12</span>mm at <span class="text-[#ADEFD1FF]" >Rs.102</span> per sq.ft</li>
+              </ul>
+            </div>
+            <div class="w-full relative  flex flex-col items-center justify-center text-center  space-y-4">
+              <h2 id="colourBtn" class="flex  items-center justify-center  text-center cursor-pointer text-lg md:text-xl font-light border-b-2 border-[#00203FFF] pb-2  rounded-t-md active:bg-[#ffffff5b]  focus:outline-none pt-2 p-2">Colour Glass<ion-icon id="arrowright2" class="flex text-2xl pl-1  text-[#00203FFF] transition-transform duration-100" id="icon1" name="chevron-forward-outline"></ion-icon><ion-icon  id="arrowbottom2" class="hidden text-2xl pl-1 pt-1 text-red-700 transition-transform duration-100"  name="close-circle-outline"></ion-icon></h2>
+              <ul id="colourDrop" class=" hidden absolute bg-[#00203FFF] text-white top-7 w-72 md:w-96 z-10 border-t-2 border-[#00203FFF]  flex-col transition-transform text-sm md:text-lg items-center justify-center  text-start p-5">
+                <li class="border-t-[1px] md:border-none   border-[#22355be8] p-2 w-full"><span class="text-[#ADEFD1FF]" >  3</span>mm grey at   <span class="text-[#ADEFD1FF]" >  Rs.36  </span> per sq.ft</li>
+                <li class="border-t-[1px] md:border-none   border-b-[1px] border-[#22355be8] p-2 w-full"><span class="text-[#ADEFD1FF]" >  12</span>mm brown at <span class="text-[#ADEFD1FF]" >  Rs.125 </span>  per sq.ft</li>
+                <h2 id="availableBtn" class="flex mt-3 items-center justify-center text-center cursor-pointer text-sm  w-full bg-[#ADEFD1FF] text-[#22355be8] rounded-md pt-2  md:text-lg font-extralight border-b-2 border-[#22355be8]   pb-2">Colour glasses are also available in <ion-icon id="arrowright21" class="flex text-lg md:text-2xl pl-1  text-[#00203FFF] transition-transform duration-100" id="icon1" name="chevron-forward-outline"></ion-icon><ion-icon  id="arrowbottom21" class="hidden  text-lg md:text-2xl pl-1  text-red-700  transition-transform duration-100"  name="close-circle-outline"></ion-icon></h2>
+                <ul id="availableDrop" class="w-full hidden pt-5 text-sm md:text-lg  pb-2 h-auto  flex-col items-center justify-center text-start">
+                  <li class="p-2 w-full"><span class="text-[#ADEFD1FF]" >  3 </span>mm, <span class="text-[#ADEFD1FF]" >  4</span>mm, <span class="text-[#ADEFD1FF]" > 6</span>mm, <span class="text-[#ADEFD1FF]" > 8</span>mm and <span class="text-[#ADEFD1FF]" >12</span>mm with colours</li>
+                  <li class="border-t-[1px] md:border-none   border-b-[1px]  border-[#22355be8] p-2 w-full"><span class="text-[#ADEFD1FF]" >White, Yellow Grey </span>and<span class="text-[#ADEFD1FF]" > Brown</span></li>
+                </ul>
+              </ul>
+            </div> 
+            <div class="w-full relative flex flex-col items-center justify-center text-center  space-y-4">
+              <h2 id="MirrorBtn" class="flex  items-center justify-center  text-center cursor-pointer text-lg md:text-xl font-light border-b-2 border-[#00203FFF] pb-2  rounded-t-md active:bg-[#ffffff5b]  focus:outline-none pt-2 p-2">Mirror Glass<ion-icon id="arrowright3" class="flex text-2xl pl-1  text-[#00203FFF] transition-transform duration-100" id="icon1" name="chevron-forward-outline"></ion-icon><ion-icon id="arrowbottom3" class="hidden text-2xl pl-1 pt-1 text-red-700 transition-transform duration-100"  name="close-circle-outline"></ion-icon></h2>
+              <ul id="MirrorDrop" class=" hidden absolute bg-[#00203FFF] text-white top-7 z-10 border-t-2 border-[#22355be8] w-52 md:w-72 flex-col transition-transform text-sm md:text-lg items-start justify-center  text-start p-5">
+                <li class="border-t-[1px] md:border-none   border-[#22355be8] p-2 w-full"><span class="text-[#ADEFD1FF]" >4</span>mm at <span class="text-[#ADEFD1FF]" >Rs.63</span> per sq.ft</li>
+                <li class="border-t-[1px] md:border-none   border-[#22355be8] p-2 w-full"><span class="text-[#ADEFD1FF]" >5</span>mm at <span class="text-[#ADEFD1FF]" >Rs.76</span> per sq.ft</li>
+                <li class="border-t-[1px] md:border-none  border-b-[1px]  border-[#22355be8] p-2 w-full"><span class="text-[#ADEFD1FF]" >6</span>mm at <span class="text-[#ADEFD1FF]" >Rs.94</span> per sq.ft</li>
+              </ul>
+            </div>
+          
+          </div>
+          <a href="contact.html">
+            <button class="p-2 mt-12 px-4 text-[#00203FFF] w-44 capitalize text-sm xl:text-base  font-medium rounded-md bg-[#79eeb9] hover:bg-[#5fe6a9] active:bg-[#6febb3] focus:outline-none ">
+              Enquiry
+            </button>
+          </a> 
+          
+        </div>
+    </section>
+    <section id="SecendSection" class="flex flex-col items-center justify-center  w-auto  h-auto px-5  md:px-12 lg:px-14 xl:px-24 py-12 md:py-32">
+      <div class="space-y-12 flex flex-col items-center w-full md:w-[600px] lg:w-[750px] h-auto justify-center">
+        <div class="relative w-full h-full ">
+          <img id="img1" class="max-h-32  w-full object-cover transition-all  rounded" src="https://images.adsttc.com/media/images/6081/91ee/f91c/8133/5700/001c/newsletter/architectural-finish-900x450-email-asset-arcit18.jpg?1619104231" alt="">
+          <h2 class="absolute top-0 p-1 md:p-3 pl-3 md:pl-5 text-sm md:text-base lg:text-xl w-full bg-black bg-opacity-70 font-normal md:font-medium text-[#ADEFD1FF] ">Color Glass</h2>
+          <ion-icon id="imgArrow1" class="absolute transition-all  flex cursor-pointer -bottom-4 text-enter w-full bg-black text-white text-lg md:text-2xl py-0.5 md:py-1" name="chevron-down-outline"></ion-icon>
+          <ion-icon id="imgArrow11" class="absolute hidden transition-all  cursor-pointer -bottom-4 text-enter w-full bg-black text-white text-lg md:text-2xl py-0.5 md:py-1" name="chevron-up-outline"></ion-icon>
+        </div>
+        <script>
+          const imgArrow1 = document.querySelector("#imgArrow1")
+          const img1 = document.querySelector("#img1")
+          const imgArrow11 = document.querySelector("#imgArrow11")
+
+          imgArrow1.addEventListener('click', ()=>{
+            img1.classList.toggle("max-h-96")
+            img1.classList.toggle("object-fill")
+            img1.classList.toggle("grayscale-100")
+            imgArrow1.classList.toggle('flex')
+            imgArrow1.classList.toggle('hidden')
+            imgArrow11.classList.toggle('hidden')
+            imgArrow11.classList.toggle('flex')
+          })
+          imgArrow11.addEventListener('click', ()=>{
+            img1.classList.toggle("max-h-96")
+            img1.classList.toggle("object-fill")
+            img1.classList.toggle("grayscale")
+            imgArrow1.classList.toggle('flex')
+            imgArrow1.classList.toggle('hidden')
+            imgArrow11.classList.toggle('hidden')
+            imgArrow11.classList.toggle('flex')
+          })
+        </script>
+        <div class="relative w-full h-full ">
+          <img id="img2" class="max-h-32  w-full object-covertransition-all  rounded" src="https://www.archi-living.com/wp-content/uploads/Cattelan_Italia_19_manja_potpis_resize.jpg" alt="">
+          <h2 class="absolute top-0 p-1 md:p-3 pl-3 md:pl-5 text-sm md:text-base lg:text-xl w-full bg-black bg-opacity-70 font-normal md:font-medium text-[#ADEFD1FF] ">Mirror Glass</h2>
+          <ion-icon id="imgArrow2" class="absolute transition-all  flex cursor-pointer -bottom-4 text-enter w-full bg-black text-white text-lg md:text-2xl py-0.5 md:py-1" name="chevron-down-outline"></ion-icon>
+          <ion-icon id="imgArrow22" class="absolute hidden transition-all  cursor-pointer -bottom-4 text-enter w-full bg-black text-white text-lg md:text-2xl py-0.5 md:py-1" name="chevron-up-outline"></ion-icon>
+        </div>
+        <script>
+          const imgArrow2 = document.querySelector("#imgArrow2")
+          const img2 = document.querySelector("#img2")
+          const imgArrow22 = document.querySelector("#imgArrow22")
+
+          imgArrow2.addEventListener('click', ()=>{
+            img2.classList.toggle("max-h-96")
+            img2.classList.toggle("object-fill")
+            img2.classList.toggle("grayscale-100")
+            imgArrow2.classList.toggle('flex')
+            imgArrow2.classList.toggle('hidden')
+            imgArrow22.classList.toggle('hidden')
+            imgArrow22.classList.toggle('flex')
+          })
+          imgArrow22.addEventListener('click', ()=>{
+            img2.classList.toggle("max-h-96")
+            img2.classList.toggle("object-fill")
+            img2.classList.toggle("grayscale")
+            imgArrow2.classList.toggle('flex')
+            imgArrow2.classList.toggle('hidden')
+            imgArrow22.classList.toggle('hidden')
+            imgArrow22.classList.toggle('flex')
+          })
+    </script>
+        <div class="relative w-full h-full ">
+          <img id="img3" class="max-h-32 w-full object-cover transition-all  rounded" src="https://www.aisglass.com/wp-content/uploads/2021/06/1-1.jpg" alt="">
+          <h2 class="absolute top-0 p-1 md:p-3 pl-3 md:pl-5 text-sm md:text-base lg:text-xl w-full bg-black bg-opacity-70 font-normal md:font-medium text-[#ADEFD1FF] ">Claer Glass</h2>
+          <ion-icon id="imgArrow3" class="absolute transition-all  flex cursor-pointer -bottom-4 text-enter w-full bg-black text-white text-lg md:text-2xl py-0.5 md:py-1" name="chevron-down-outline"></ion-icon>
+          <ion-icon id="imgArrow33" class="absolute hidden transition-all  cursor-pointer -bottom-4 text-enter w-full bg-black text-white text-lg md:text-2xl py-0.5 md:py-1" name="chevron-up-outline"></ion-icon>
+        </div>
+      </div>
+      <script>
+        const imgArrow3 = document.querySelector("#imgArrow3")
+          const img3 = document.querySelector("#img3")
+          const imgArrow33 = document.querySelector("#imgArrow33")
+
+          imgArrow3.addEventListener('click', ()=>{
+            img3.classList.toggle("max-h-96")
+            img3.classList.toggle("object-fill")
+            img3.classList.toggle("grayscale-100")
+            imgArrow3.classList.toggle('flex')
+            imgArrow3.classList.toggle('hidden')
+            imgArrow33.classList.toggle('hidden')
+            imgArrow33.classList.toggle('flex')
+          })
+          imgArrow33.addEventListener('click', ()=>{
+            img3.classList.toggle("max-h-96")
+            img3.classList.toggle("object-fill")
+            img3.classList.toggle("grayscale")
+            imgArrow3.classList.toggle('flex')
+            imgArrow3.classList.toggle('hidden')
+            imgArrow33.classList.toggle('hidden')
+            imgArrow33.classList.toggle('flex')
+          })
+      </script>
+    </section>
+   
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+             const clearBtn  = document.querySelector('#clearBtn')
+             const clearDrop = document.querySelector('#clearDrop')
+             const colourBtn = document.querySelector('#colourBtn')
+             const MirrorBtn = document.querySelector('#MirrorBtn')
+             const icon1 = document.querySelector('#icon1')
+             const arrowright1 = document.querySelector('#arrowright1')
+             const arrowbottom1 = document.querySelector('#arrowbottom1')
+ 
+             clearBtn.addEventListener('click', () => {
+              clearDrop.classList.toggle('hidden')
+              clearDrop.classList.toggle('flex')
+              arrowright1.classList.toggle('hidden')
+              arrowright1.classList.toggle('flex')
+              arrowbottom1.classList.add('flex')
+              arrowbottom1.classList.toggle('hidden')
+              
+             })
+             colourBtn.addEventListener('click', () => {
+              clearDrop.classList.add('hidden')
+             })
+             MirrorBtn.addEventListener('click', () => {
+              clearDrop.classList.add('hidden')
+             })
+             clearBtn.addEventListener('click',function () {
+              icon1.classList.add('rotate')
+              
+             })
+         })
+      window.addEventListener('DOMContentLoaded', () => {
+             const colourBtn  = document.querySelector('#colourBtn')
+             const colourDrop = document.querySelector('#colourDrop')
+             const FirstSection = document.querySelector('#FirstSection')
+             const clearBtn = document.querySelector('#clearBtn')
+             const MirrorBtn = document.querySelector('#MirrorBtn')
+             const arrowright2 = document.querySelector('#arrowright2')
+             const arrowbottom2 = document.querySelector('#arrowbottom2')
+             
+ 
+             colourBtn.addEventListener('click', () => {
+              colourDrop.classList.toggle('hidden')
+              colourDrop.classList.toggle('flex')
+              arrowright2.classList.toggle('hidden')
+              arrowright2.classList.toggle('flex')
+              arrowbottom2.classList.add('flex')
+              arrowbottom2.classList.toggle('hidden')
+             })
+             MirrorBtn.addEventListener('click', () => {
+              colourDrop.classList.add('hidden')
+             })
+             clearBtn.addEventListener('click', () => {
+              colourDrop.classList.add('hidden')
+             })
+         })
+      window.addEventListener('DOMContentLoaded', () => {
+             const availbleBtn  = document.querySelector('#availableBtn')
+             const availbleDrop = document.querySelector('#availableDrop')
+             const FirstSection = document.querySelector('#FirstSection')
+             const arrowright21 = document.querySelector('#arrowright21')
+             const arrowbottom21 = document.querySelector('#arrowbottom21')
+ 
+             availbleBtn.addEventListener('click', () => {
+              availbleDrop.classList.toggle('hidden')
+              availbleDrop.classList.toggle('flex')
+              arrowright21.classList.toggle('hidden')
+              arrowright21.classList.toggle('flex')
+              arrowbottom21.classList.add('flex')
+              arrowbottom21.classList.toggle('hidden')
+             })
+         })
+      window.addEventListener('DOMContentLoaded', () => {
+             const MirrorBtn  = document.querySelector('#MirrorBtn')
+             const MirrorDrop = document.querySelector('#MirrorDrop')
+             const FirstSection = document.querySelector('#FirstSection')
+             const colourBtn = document.querySelector('#colourBtn')
+             const clearBtn = document.querySelector('#clearBtn')
+             const arrowright3 = document.querySelector('#arrowright3')
+             const arrowbottom3 = document.querySelector('#arrowbottom3')
+ 
+ 
+             MirrorBtn.addEventListener('click', () => {
+              MirrorDrop.classList.toggle('hidden')
+              MirrorDrop.classList.toggle('flex')
+              arrowright3.classList.toggle('hidden')
+              arrowright3.classList.toggle('flex')
+              arrowbottom3.classList.add('flex')
+              arrowbottom3.classList.toggle('hidden')
+             })
+             colourBtn.addEventListener('click', () => {
+              MirrorDrop.classList.add('hidden')
+             })
+              clearBtn.addEventListener('click', () => {
+              MirrorDrop.classList.add('hidden')
+             })
+         })
+
+   </script>
+    <section id="thirdSection" class="flex flex-col  items-center justify-center  w-full h-auto  px-5  md:px-12 lg:px-14 xl:px-24 pb-12 md:py-16">
+      <div class="w-full md:w-[600px] lg:w-[750px] text-[#00203FFF] h-full flex flex-col items-center  py-3 md:py-8  px-5 md:px-12 text-center  justify-center">
+        <h2 class="text-[#] text-2xl font-medium md:text-3xl lg:text-4xl xl:text-5xl">Interior Accessories</h2>
+        <h2 class="text-[#] mt-5 text-xs font-light md:text-sm lg:text-lg xl:text-base">Glass patch fittings, basket, lifeon 303 grade glass patches (all types), lock, handle, slider, hinches, fevicol, heatx, silicon, etc.</h2>
+       </div>
+        <img class="w-full md:w-[600px] lg:w-[750px] h-auto mt-5"  src="/img/accessories-removebg-preview.png" alt="">
+        <img  class="w-full h-full mt-10" src="/img/22-removebg-preview.png" alt="">
+      </div>
+    </section>
+    <footer  id="fourthSection" class="w-full h-auto  bg-[#00203FFF]">
+        <div class="  w-full h-full  transition-all text-[#79eeb9]  p-2 px-5 md:px-12 lg:px-14 xl:px-24">
+            <div class="w-full h-full my-10 flex items-start justify-between">
+              <div class="h-auto w-full  flex flex-col md:flex-row  items-center md:items-start justify-between space-y-7 md:space-y-0 md:space-x-12 xl:space-x-16 ">
+                <div class="w-auto text-sm lg:text-lg font-thin space-y-3 flex flex-col text-start items-center md:items-start justify-center">
+                  <h2 class=" pb-5 font-medium  text-white">Get in touch</h2>
+                  <p class="flex w-auto h-auto items-start justify-center space-x-2"><ion-icon class="text-2xl text-white" name="wallet-outline"></ion-icon><a class=" " href="">V.M Arcade, Chelavoor, Kozhikode-Wayanad Road, kerala</a></p>
+                  <p class="flex w-auto h-auto items-start justify-center space-x-2 "><ion-icon class="text-xl text-white" name="call-outline"></ion-icon><a class="hover:text-white  transition" href="tel:+91 9400523355">+91 9400523355 <br href="tel:+91 8281073564" class="hidden md:flex pr-6 md:pl-0"> +91 8281073564</a></p>
+                  <p class="flex w-auto h-auto items-start justify-center space-x-2 "><ion-icon class="text-xl text-white"  name="mail-outline"></ion-icon><a class="hover:text-white  transition" href="mailto:rahaliving@gmail.com">rahaliving@gmail.com</a></p>
+                </div>
+                <div class="w-auto md:w-52 text-sm lg:text-lg  font-thin space-y-2 flex flex-col items-center md:items-start">
+                  <p class="  font-medium pb-5 text-white">Interior Designs</p>
+                  <a class="hover:text-white transition" href="Interior.html" >Interior</a>
+                  <a class="hover:text-white transition" href="Officespace.html">Office Space</a>
+                  <a class="hover:text-white transition" href="GlassWork.html" >Glass Space</a>
+                  <a class="hover:text-white transition" href="Kitchen.html" >Kitchen</a>
+                  <a class="hover:text-white transition" href="LivingRoom.html" >Living Room</a>
+                  <a class="hover:text-white transition" href="kids.html" >Kids Room</a>
+                  <a class="hover:text-white transition" href="Trade.html" >Bed Room</a>
+                </div>
+                <div class="md:w-32 w-auto text-sm lg:text-lg font-thin space-y-2 flex flex-col items-center md:items-start">
+                  <h2 class=" font-medium pb-5 text-white">Information</h2>
+                  <a class="hover:text-white transition" href="Trade.html" class="pt-5">Trade</a>
+                  <a class="hover:text-white transition" href="About.html">About Us</a>
+                  <a class="hover:text-white transition" href="contact.html">Contact us</a>
+                  <a></a>
+                </div>
+                <div class="md:w-20 w-auto  flex flex-col items-center justify-center md:justify-start space-y-2">
+                  <a class=" capitalize text-[#00203FFF] px-2  lg:px-3.5 text-sm lg:text-base pt-1 w-auto h-auto bg-[#ADEFD1FF] rounded pb-1.5 font-medium " href="https://www.instagram.com/rahaliving/">instagram</a>
+                   <div class="w-auto mt-1 flex space-x-1 items-center h-auto">
+                       <a class=" text-base lg:text-lg text-[#ADEFD1FF]" href="https://www.facebook.com/rahaliving/">
+                           <ion-icon name="logo-facebook"></ion-icon>
+                       </a>
+                       <a class=" text-base lg:text-lg  text-[#ADEFD1FF]" href="https://www.instagram.com/rahaliving/">
+                          <ion-icon name="logo-instagram"></ion-icon>
+                       </a>
+                       <a class=" text-base lg:text-lg mb-1  text-[#00203FFF]" href="https://vymaps.com/IN/Raha-Living-1144968025658927/">
+                           <img class="w-4 rounded" src="https://cdn.semrush.com/__static__/semrush-logo-700.jpg" alt="">
+                       </a>
+                       <a class=" text-base lg:text-lg  mb-1  text-[#00203FFF]" href="https://jsdl.in/RSL-LLK1672122564">
+                           <img class="w-4 rounded" src="https://user-images.githubusercontent.com/42868728/70027410-164cdd00-15c8-11ea-9852-6982408e4ea6.png" alt="">
+                       </a>
+                     </div>
+                 </div>
+              </div>
+              
+            </div>
+      
+          </div>
+          <div class="w-full h-full transition-all text-[#79eeb9] flex items-center justify-center md:items-start md:justify-start bg-[#00203FFF]   ">
+              <h1 class="text-xs md:text-base  p-2 px-5 md:px-12 lg:px-14 xl:px-24 font-medium  ">© 2019 at-rahaiving.in All rights reserved<br class="flex md:hidden  "> | Made by <a class="underline pl-1 pt-2" href="https://www.instagram.com/Sw_abah">Sw_abah</a> </h1>
+          </div>
+    </footer>
+
+    <button onclick="topFunction()" id="movetop" class="fixed z-30 right-7 bottom-5 sm:right-12 sm:bottom-6" title="Go to top">
+      <div class=" bg-[#79eeb9] hover:bg-[#5fe6a9] active:bg-[#6febb3] rounded-full p-2  ">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-7 hover:text-[#00203FFF]  cursor-pointer text-[#00203FFF] h-7 ">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+            </svg>
+      </div>
+   </button>
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction()
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("movetop").style.display = "block";
+    } else {
+      document.getElementById("movetop").style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+</body>
+</html>

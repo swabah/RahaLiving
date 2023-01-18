@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior:smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Raha Living</title>
+    <link rel="icon" href="/img/logo_raha_living-removebg-preview.png" type="image/icon type">
+    <script src="https://cdn.tailwindcss.com"></script>    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Cairo+Play:wght@300;400&family=Noto+Kufi+Arabic:wght@300;400;500&family=Readex+Pro:wght@300;400&family=Reem+Kufi&family=Roboto+Condensed:ital,wght@1,300&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
+</head>
+<body class="relative h-auto bg-[#ffffff] flex flex-col font-sans-serif2 m-0 p-0 bg-gradient-to-r from-rose-100 to-teal-100">
+  <nav id="nav" class="w-full relative z-50">
+    <div id="Nav-section" class="flex  bg-[#00203FFF] w-full items-center h-16 px-5  md:px-12 lg:px-14 xl:px-24 translate  transition-all duration-100  justify-between">
+      <div id="Navbar-left" class="flex cursor-pointer flex-col items-start justify-center">
+        <a href="index.html">
+        <img class="md:w-3/3 md:h-8 h-[1.75rem] w-full" src="/img/icon raha dup.png" alt="">
+        </a>
+        <!-- <h2 class=" text-white  font-medium pl-12 text-xs capitalize">Home Decor</h2> -->
+      </div>
+      <div class="relative  space-x-5 hidden md:flex items-center justify-end">
+        <a id="home" class="capitalize text-sm transition lg:text-base text-white font-medium hover:text-[#ADEFD1FF] " href="index.html">home</a>
+          <div class="relative ">
+            <div id="dropdownInterior" class="flex  items-center justify-center space-x-0.5">
+                  <a href="Interior.html" id="Interior" class="capitalize cursor-pointer  transition text-sm lg:text-base text-white hover:text-[#ADEFD1FF]  font-medium" >Interior Designs</a>
+                  <a  href="#"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-4 mt-1  flex stroke-white hover:text-[#ADEFD1FF] "><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>   </a>              
+                  <a id="arrowTop" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-4 mt-1  hidden stroke-white hover:text-[#ADEFD1FF] "><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /> </svg> </a>              
+            </div>
+            <div id="dropdown-Design" class="hidden absolute w-64 top-11 z-10">
+                <div class="flex flex-col w-full h-full p-3 transition items-start justify-center space-y-1 bg-[#00203FFF] border-[#ADEFD1FF] border-t-2 rounded-b-md">
+                    <a class="px-3 font-sans-serif4 hover:bg-[#ADEFD1FF] bg-opacity-20 h-auto transition text-white hover:text-[#00203FFF]  w-full py-2 focus:ring-1 focus:ring-[#ADEFD1FF]  rounded" href="BedRoom.html">Bed room</a>
+                    <a class="px-3 font-sans-serif4 hover:bg-[#ADEFD1FF] bg-opacity-20 h-auto transition text-white hover:text-[#00203FFF]  w-full py-2 focus:ring-1 focus:ring-[#ADEFD1FF]  rounded" href="Kitchen.html">Kitchen</a>
+                    <a class="px-3 font-sans-serif4 hover:bg-[#ADEFD1FF] bg-opacity-20 h-auto transition text-white hover:text-[#00203FFF]  w-full py-2 focus:ring-1 focus:ring-[#ADEFD1FF]  rounded" href="LivingRoom.html">Living room</a>
+                    <a class="px-3 font-sans-serif4 hover:bg-[#ADEFD1FF] bg-opacity-20 h-auto transition text-white hover:text-[#00203FFF]  w-full py-2 focus:ring-1 focus:ring-[#ADEFD1FF]  rounded" href="kids.html">Kids Room</a>
+                    <a class="px-3 font-sans-serif4 hover:bg-[#ADEFD1FF] bg-opacity-20 h-auto transition text-white hover:text-[#00203FFF]  w-full py-2 focus:ring-1 focus:ring-[#ADEFD1FF]  rounded" href="GlassWork.html">Glass work</a>
+                    <a class="px-3 font-sans-serif4 hover:bg-[#ADEFD1FF] bg-opacity-20 h-auto transition text-white hover:text-[#00203FFF]  w-full py-2 focus:ring-1 focus:ring-[#ADEFD1FF]  rounded" href="Officespace.html"> Office Space</a>
+                </div>
+            </div>
+        </div>
+        <a id="trade" class="capitalize text-sm lg:text-base text-white  hover:text-[#ADEFD1FF] transition font-medium" href="Trade.html">trade</a>
+        <a id="About" class="capitalize text-sm lg:text-base text-white  hover:text-[#ADEFD1FF] transition font-medium" href="About.html">About </a>
+        <a id="contact" class="capitalize text-sm lg:text-base text-white  hover:text-[#ADEFD1FF] transition font-medium" href="contact.html">contact</a>
+        <div id="numicon"  class="flex transition-transform  items-center justify-center space-x-2 ">
+          <ion-icon class="text-2xl bg-[#ADEFD1FF]  transition hover:bg-[#5fe6a9] active:bg-[#6febb3b8] focus:outline-none cursor-pointer  p-1 rounded-sm text-[#00203FFF] " name="chatbubble-ellipses-outline"></ion-icon>
+          <a id="number" class="capitalize hidden text-sm lg:text-base text-white hover:text-[#ADEFD1FF] transition font-medium lining-nums " href="tel:+91 9400523355">+91 9400523355</a>
+        </div>
+      </div>
+      <script>
+     window.addEventListener('DOMContentLoaded', () => {
+        const icon = document.querySelector("#numicon")
+        const number = document.querySelector("#number")
+
+        icon.addEventListener('click', () =>{
+           number.classList.toggle("hidden")
+           number.classList.toggle("flex")
+        })
+     })
+        
+      </script>
+      <button class="flex md:hidden items-center justify-end">
+        <a id="menuBtn" class="transition w-auto h-auto">
+            <ion-icon class="text-2xl text-white hover:text-[#ADEFD1FF] " name="grid-outline"></ion-icon>
+        </a>
+        <div id="menuDropdown" class=" hidden flex-col items-center justify-center top-0 rounded right-0 text-start absolute w-full px-3 h-auto py-5 bg-[#00203FFF] ">
+          <a id="home" class="px-6 flex items-center justify-between py-2 rounded-t-md hover:bg-[#00203FFF] hover:text-[#ADEFD1FF] transition  text-[#00203FFF] bg-[#ADEFD1FF]  w-full h-auto" href="index.html">home<ion-icon class="text-xl stroke-[#00203FFF]   transition-all duration-75"  name="arrow-forward-outline"></ion-icon></a>
+          <div class="px-6 flex items-center justify-between py-2  hover:bg-[#00203FFF] hover:text-[#ADEFD1FF] transition-all   text-[#00203FFF] bg-[#ADEFD1FF]  w-full h-auto">
+            <a  class="  w-6/7 h-auto transition" href="Interior.html">Interior Designs</a>
+            <ion-icon id="mdInterior" class="text-xl p-1 px-1.5 rounded-sm w-1/7 bg-[#adefd16e] hover:bg-[#ADEFD1FF] hover:text-[#00203FFF] transition duration-75"   name="chevron-down-outline"></ion-icon>
+          </div>
+            <div id="mdInteriordropdown" class="hidden py-5 flex-col items-center justify-between  text-[#ADEFD1FF] bg-[#00203FFF] w-full h-auto">
+              <a class="px-6 flex items-center justify-between py-2 transition  bg-[#001f3fa4] hover:bg-[#22355be8] rounded-md w-full h-auto" href="BedRoom.html">Bed Room<ion-icon class="text-xl stroke-[#00203FFF]   transition-all duration-75"  name="arrow-forward-outline"></ion-icon></a>
+              <a class="px-6 flex items-center justify-between py-2 transition  bg-[#00203FFF] hover:bg-[#22355be8] rounded-md w-full h-auto" href="Kitchen.html">Kitchen<ion-icon class="text-xl stroke-[#00203FFF]   transition-all duration-75"  name="arrow-forward-outline"></ion-icon></a>
+              <a class="px-6 flex items-center justify-between py-2 transition  bg-[#00203FFF] hover:bg-[#22355be8] rounded-md w-full h-auto" href="LivingRoom.html">Living Room<ion-icon  class="text-xl stroke-[#00203FFF]   transition-all duration-75" name="arrow-forward-outline"></ion-icon></a>
+              <a class="px-6 flex items-center justify-between py-2 transition  bg-[#00203FFF] hover:bg-[#22355be8] rounded-md w-full h-auto" href="kids.html">kids Room<ion-icon  class="text-xl stroke-[#00203FFF]   transition-all duration-75" name="arrow-forward-outline"></ion-icon></a>
+              <a class="px-6 flex items-center justify-between py-2 transition  bg-[#00203FFF] hover:bg-[#22355be8] rounded-md w-full h-auto" href="GlassWork.html">Glass Work<ion-icon  class="text-xl stroke-[#00203FFF]   transition-all duration-75" name="arrow-forward-outline"></ion-icon></a>
+              <a class="px-6 flex items-center justify-between py-2 transition  bg-[#00203FFF] hover:bg-[#22355be8] rounded-md w-full h-auto" href="Officespace.html"> Office Space<ion-icon  class="text-xl stroke-[#00203FFF]   transition-all duration-75" name="arrow-forward-outline"></ion-icon></a>
+            </div>
+            <a id="tradeMd" class="px-6 flex items-center justify-between py-2  hover:bg-[#00203FFF] hover:text-[#ADEFD1FF] transition  text-[#00203FFF] bg-[#ADEFD1FF]  w-full h-auto" href="Trade.html">trade<ion-icon class="text-xl stroke-[#00203FFF]   transition-all duration-75"  name="arrow-forward-outline"></ion-icon></a>
+            <a id="About" class="px-6 flex items-center justify-between py-2  hover:bg-[#00203FFF] hover:text-[#ADEFD1FF] transition  text-[#00203FFF] bg-[#ADEFD1FF]  w-full h-auto" href="About.html">About us<ion-icon class="text-xl stroke-[#00203FFF]   transition-all duration-75"  name="arrow-forward-outline"></ion-icon></a>
+            <a id="contactMd" class="px-6 flex items-center justify-between py-2  hover:bg-[#00203FFF] hover:text-[#ADEFD1FF] transition rounded-b-md   text-[#00203FFF] bg-[#ADEFD1FF]  w-full h-auto" href="contact.html">Contact us<ion-icon class="text-xl stroke-[#00203FFF]   transition-all duration-75"  name="arrow-forward-outline"></ion-icon></a>
+            <!-- <a id="numberMD" class="px-6 flex items-center justify-between py-2  hover:bg-[#00203FFF] hover:text-[#ADEFD1FF] transition-all rounded-b-md  text-[#00203FFF] bg-[#ADEFD1FF]  w-full h-auto" href="">+91 9400523355<ion-icon  class="text-xl stroke-[#00203FFF]   transition-all duration-75" name="arrow-forward-outline"></ion-icon></a> -->
+        </div>
+      </button>
+    </div>
+  </nav>
+  <script>
+     window.addEventListener('DOMContentLoaded', () => {
+            const Interior  = document.querySelector('#mdInterior')
+            const Interiordropdown = document.querySelector('#mdInteriordropdown')
+            const FirstSection = document.querySelector('#FirstSection')
+
+            Interior.addEventListener('click', () => {
+                Interiordropdown.classList.toggle('hidden')
+                Interiordropdown.classList.toggle('flex')
+            })
+        })
+  </script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+           const menuBtn  = document.querySelector('#menuBtn')
+           const menuDropdown = document.querySelector('#menuDropdown')
+           const FirstSection = document.querySelector('#FirstSection')
+           const secendSection = document.querySelector('#secendSection')
+
+           menuBtn.addEventListener('click', () => {
+               menuDropdown.classList.toggle('hidden')
+               menuDropdown.classList.toggle('flex')
+           })
+           FirstSection.addEventListener('mousemove', () =>{
+               menuDropdown.classList.add('hidden')
+           })
+           secendSection.addEventListener('mousemove', () =>{
+             menuDropdown.classList.add('hidden')
+           })
+       })
+ </script>
+  <script>
+     window.addEventListener('DOMContentLoaded', () => {
+            const dropdownInterior  = document.querySelector('#dropdownInterior')
+            const Interior  = document.querySelector('#Interior')
+            const item1drop = document.querySelector('#dropdown-Design')
+            const FirstSection = document.querySelector('#FirstSection')
+            const Navbarleft = document.querySelector('#Navbar-left')
+            const About = document.querySelector('#About')
+            const home = document.querySelector('#home')
+            const trade = document.querySelector('#trade')
+            const contact = document.querySelector('#contact')
+            const number = document.querySelector('#number')
+
+            dropdownInterior.addEventListener('mousemove', () => {
+              item1drop.classList.toggle('hidden')
+              item1drop.classList.toggle('flex')
+            })
+            
+            FirstSection.addEventListener('mousemove', () =>{
+              item1drop.classList.add('hidden')
+            })
+            Interior.addEventListener('mousemove', () =>{
+              item1drop.classList.add('hidden')
+            })
+            Navbarleft.addEventListener('mousemove', () =>{
+              item1drop.classList.add('hidden')
+            })
+            home.addEventListener('mousemove', () =>{
+              item1drop.classList.add('hidden')
+            })
+            About.addEventListener('mousemove', () =>{
+              item1drop.classList.add('hidden')
+            })
+            trade.addEventListener('mousemove', () =>{
+              item1drop.classList.add('hidden')
+            })
+            contact.addEventListener('mousemove', () =>{
+              item1drop.classList.add('hidden')
+            })
+            number.addEventListener('mousemove', () =>{ 
+              item1drop.classList.add('hidden')
+            })
+        })
+  </script>
+          
+    <section id="FirstSection" class="flex items-start justify-start  w-full h-auto pt-12 md:pt-32">
+           <div class="w-full h-auto flex flex-col items-center justify-center px-3 md:px-12 py-12">
+               <div class="flex  md:w-[650px]  flex-col items-center justify-center  space-y-5 md:space-y-10">
+                <div class="w-full  space-y-5 md:space-y-0 md:py-5 flex  flex-col md:flex-row  items-center justify-center ">
+                  <h2 class="md:w-1/2 font-medium text-3xl md:text-4xl">Let's discuss <br class=""> your spaces!</h2>
+                  <ul class=" md:text-xl  text-center md:text-start font-thin md:list-decimal  md:space-y-2">
+                      <li>Free Consultation</li>
+                      <li>Budget Quotations</li>
+                      <li>Latest Technologies</li>
+                      <li>Eco Friendly Constructions</li>
+                  </ul>
+               </div>     
+                <img class="w-full md:w-[650px]  rounded-md" src="http://cdn.home-designing.com/wp-content/uploads/2022/02/concrete-living-room.jpg" alt="">
+                       
+               </div>
+               <div class="flex  flex-col w-full md:w-[650px] items-center justify-center mt-28 h-auto">
+                 <h2 class="text-xl md:text-2xl lg:text-4xl pb-3 font-medium text-[#00203FFF]">Contact Form</h2>
+                 <h2 class="text-xs md:text-base lg:text-lg font-light md:border-b-2 pb-3 text-center border-[#ADEFD1FF] text-[#00203FFF]">Fill this out so that we can learn more about your spaces & requirements.</h2>
+                 <p id="formthanks" class="text-lg lg:text-2xl font-medium text-green-600"></p>
+                 <form id="submit-form" class=" w-full md:w-[650px]   px-3 md:px-12 py-12 rounded-xl space-y-7 h-full  mt-7 md:mt-0" action="">
+                  <label class="block">
+                    <span  class="block text-sm font-medium text-[#00203FFF] ">Fullname</span>
+                    <input name="Fullname" id="fullname" type="text" placeholder="enter your name" required class="text-[#00203FFF]   mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+                      focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+                      disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+                      invalid:border-pink-500 invalid:text-pink-600
+                      focus:invalid:border-pink-500 focus:invalid:ring-pink-500
+                    "/>
+                  </label>
+                  <label class="block">
+                    <span class="block text-sm font-medium text-[#00203FFF]  after:content-['*'] after:ml-0.5 after:text-red-500 ">Email</span>
+                    <input name="Email" id="email" type="email" required placeholder="you@example.com" class="text-[#00203FFF]  peer peer-invalid:visible mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+                      focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+                      disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+                      invalid:border-pink-500 invalid:text-pink-600
+                      focus:invalid:border-pink-500 focus:invalid:ring-pink-500
+                    "/>
+                    <p class=" mt-2 hidden  text-pink-600 text-sm">
+                      Please provide a valid email address.
+                    </p>
+                  </label>
+                  <label class="block">
+                    <span class="block text-sm font-medium text-[#00203FFF] ">Password</span>
+                    <input name="Password" id="password" type="password" required placeholder="enter your password" class="text-[#00203FFF]  mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+                      focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+                      disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+                      invalid:border-pink-500 invalid:text-pink-600
+                      focus:invalid:border-pink-500 focus:invalid:ring-pink-500
+                    "/>
+                  <label class="block mt-5">
+                    <span class="block text-sm font-medium text-[#00203FFF] ">Messege</span>
+                    <textarea name="Messege" id="textarea" required class="text-[#00203FFF]  w-full placeholder:text-sm  h-32 mt-1 block px-3 py-2 bg-white border border-sky-300 rounded-md text-sm shadow-sm placeholder-slate-400
+                    focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+                    " placeholder="messege "></textarea>
+                  </label>
+                  <a href="home.html">
+                  <button type="submit"  class="py-1.5 mt-5 px-4 capitalize ring-1 bg-white w-full  ring-pink-500 focus:border-sky-600 focus:ring-sky-500 rounded-lg">submit</button>
+                  </a>
+                </form>
+              </div>
+              <div class="flex border-b-2 py-12 w-full md:w-[650px] h-full border-black text-[#00203FFF]  flex-col items-center justify-center px-3 md:px-12 ">
+                <iframe class="w-full h-full transition-all duration-75 md:w-full hover:h-[300px]  md:hover:h-[650px] rounded-md " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15649.970401471614!2d75.84614112219172!3d11.298660913414446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65d2266ae849b%3A0x630f5b99ff193d30!2z4LSw4LS5IOC0suC0v-C0teC0v-C0guC0l-C1jSDgtLngtYvgtIIg4LSh4LWG4LSV4LWN4LSV4LW8!5e0!3m2!1sml!2sin!4v1672506882690!5m2!1sml!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               </div>
+              
+
+           </div> 
+    </section>
+
+    <footer  id="secendSection" class="w-full h-auto  bg-[#00203FFF]">
+        <div class="  w-full h-full  transition-all text-[#79eeb9]  p-2 px-5 md:px-12 lg:px-14 xl:px-24">
+            <div class="w-full h-full my-10 flex items-start justify-between">
+              <div class="h-auto w-full  flex flex-col md:flex-row  items-center md:items-start justify-between space-y-7 md:space-y-0 md:space-x-12 xl:space-x-16 ">
+                <div class="w-auto text-sm lg:text-lg font-thin space-y-3 flex flex-col text-start items-center md:items-start justify-center">
+                  <h2 class=" pb-5 font-medium  text-white">Get in touch</h2>
+                  <p class="flex w-auto h-auto items-start justify-center space-x-2"><ion-icon class="text-2xl text-white" name="wallet-outline"></ion-icon><a class=" " href="">V.M Arcade, Chelavoor, Kozhikode-Wayanad Road, kerala</a></p>
+                  <p class="flex w-auto h-auto items-start justify-center space-x-2 "><ion-icon class="text-xl text-white" name="call-outline"></ion-icon><a class="hover:text-white  transition" href="tel:+91 9400523355">+91 9400523355 <br href="tel:+91 8281073564" class="hidden md:flex pr-6 md:pl-0"> +91 8281073564</a></p>
+                  <p class="flex w-auto h-auto items-start justify-center space-x-2 "><ion-icon class="text-xl text-white"  name="mail-outline"></ion-icon><a class="hover:text-white  transition" href="mailto:rahaliving@gmail.com">rahaliving@gmail.com</a></p>
+                </div>
+                <div class="w-auto md:w-52 text-sm lg:text-lg  font-thin space-y-2 flex flex-col items-center md:items-start">
+                  <p class="  font-medium pb-5 text-white">Interior Designs</p>
+                  <a class="hover:text-white transition" href="Interior.html" >Interior</a>
+                  <a class="hover:text-white transition" href="Officespace.html">Office Space</a>
+                  <a class="hover:text-white transition" href="GlassWork.html" >Glass Space</a>
+                  <a class="hover:text-white transition" href="Kitchen.html" >Kitchen</a>
+                  <a class="hover:text-white transition" href="LivingRoom.html" >Living Room</a>
+                  <a class="hover:text-white transition" href="kids.html" >Kids Room</a>
+                  <a class="hover:text-white transition" href="Trade.html" >Bed Room</a>
+                </div>
+                <div class="md:w-32 w-auto text-sm lg:text-lg font-thin space-y-2 flex flex-col items-center md:items-start">
+                  <h2 class=" font-medium pb-5 text-white">Information</h2>
+                  <a class="hover:text-white transition" href="Trade.html" class="pt-5">Trade</a>
+                  <a class="hover:text-white transition" href="About.html">About Us</a>
+                  <a class="hover:text-white transition" href="contact.html">Contact us</a>
+                  <a></a>
+                </div>
+                <div class="md:w-20 w-auto  flex flex-col items-center justify-center md:justify-start space-y-2">
+                  <a class=" capitalize text-[#00203FFF] px-2  lg:px-3.5 text-sm lg:text-base pt-1 w-auto h-auto bg-[#ADEFD1FF] rounded pb-1.5 font-medium " href="https://www.instagram.com/rahaliving/">instagram</a>
+                   <div class="w-auto mt-1 flex space-x-1 items-center h-auto">
+                       <a class=" text-base lg:text-lg text-[#ADEFD1FF]" href="https://www.facebook.com/rahaliving/">
+                           <ion-icon name="logo-facebook"></ion-icon>
+                       </a>
+                       <a class=" text-base lg:text-lg  text-[#ADEFD1FF]" href="https://www.instagram.com/rahaliving/">
+                          <ion-icon name="logo-instagram"></ion-icon>
+                       </a>
+                       <a class=" text-base lg:text-lg mb-1  text-[#00203FFF]" href="https://vymaps.com/IN/Raha-Living-1144968025658927/">
+                           <img class="w-4 rounded" src="https://cdn.semrush.com/__static__/semrush-logo-700.jpg" alt="">
+                       </a>
+                       <a class=" text-base lg:text-lg  mb-1  text-[#00203FFF]" href="https://jsdl.in/RSL-LLK1672122564">
+                           <img class="w-4 rounded" src="https://user-images.githubusercontent.com/42868728/70027410-164cdd00-15c8-11ea-9852-6982408e4ea6.png" alt="">
+                       </a>
+                     </div>
+                 </div>
+              </div>
+              
+            </div>
+      
+          </div>
+          <div class="w-full h-full transition-all text-[#79eeb9] flex items-center justify-center md:items-start md:justify-start bg-[#00203FFF]   ">
+              <h1 class="text-xs md:text-base  p-2 px-5 md:px-12 lg:px-14 xl:px-24 font-medium  ">© 2019 at-rahaiving.in All rights reserved<br class="flex md:hidden  "> | Made by <a class="underline pl-1 pt-2" href="https://www.instagram.com/Sw_abah">Sw_abah</a> </h1>
+          </div>
+    </footer>
+
+    <button onclick="topFunction()" id="movetop" class="fixed z-30 right-7 bottom-5 sm:right-12 sm:bottom-6" title="Go to top">
+      <div class=" bg-[#79eeb9] hover:bg-[#5fe6a9] active:bg-[#6febb3] rounded-full p-2  ">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-7 hover:text-[#00203FFF]  cursor-pointer text-[#00203FFF] h-7 ">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+            </svg>
+      </div>
+   </button>
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction()
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("movetop").style.display = "block";
+    } else {
+      document.getElementById("movetop").style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwetMrKv_Z-BuZ0C-HYGkwMou3qLZHp-rLfAE3udo-4KfQ808oHbw88JAHOPQM5YIvwJw/exec'
+        const form = document.forms['submit-form']
+        const formthanks = document.getElementById("formthanks")
+        const submitform = document.getElementById("submit-form")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(Response => {
+              console.log('success');
+                formthanks.classList.add("py-24")
+                formthanks.innerHTML = '"Thanks For Your Respond!"'
+                submitform.classList.add("hidden")
+                // subarea.classList.add("w-full")
+              // setTimeout(function () {
+              //    formthanks.innerHTML = ''  
+              //    subarea.classList.add("hidden")
+              // },) 
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+  </script>
+</body>
+</html>
