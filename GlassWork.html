@@ -5,10 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Glass Work | Raha Living</title>
-        <script src="https://cdn.tailwindcss.com"></script>         <link href="/dist/output.css" rel="stylesheet">
-       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <!-- // scroll Animation link // -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <!-- tailwind link -->
+       <script src="https://cdn.tailwindcss.com"></script>   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+       <!-- font link -->
        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Cairo+Play:wght@300;400&family=Noto+Kufi+Arabic:wght@300;400;500&family=Readex+Pro:wght@300;400&family=Reem+Kufi&family=Roboto+Condensed:ital,wght@1,300&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+       <!-- ion iconic link  -->
+       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <!-- image sliding link  -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 
     <!-- Demo styles -->
     <style>
@@ -220,57 +226,66 @@
       <section id="secendSection" class="flex  w-full h-auto  items-center    justify-center">
         <div class="flex flex-col w-full md:w-[750px] items-center justify-center  h-auto px-5  md:px-12 lg:px-14 xl:px-24 py-12 md:py-32">
           <div class=" w-full   h-auto flex flex-col items-center justify-center">
-            <h2 class="text-4xl md:text-5xl xl:text-6xl font-medium capitalize text-[#00203FFF] text-center">Glass Work</h2>
-            <p class="mt-10 text-center font-light">Glass adds style and sophistication to interior design raha living has awide range of glass for interiors in diffrent textures and patterns.choose from transparent,translucent and opaque glass to maximize space,improve natural light,protect privacy, ensure safety or enhance aesthetics.</p>
+            <h2 data-aos="fade-up" class="text-4xl md:text-5xl xl:text-6xl font-medium capitalize text-[#00203FFF] text-center">Glass Work</h2>
+            <p data-aos="fade-up" class="mt-10 text-center font-light">Glass adds style and sophistication to interior design raha living has awide range of glass for interiors in diffrent textures and patterns.choose from transparent,translucent and opaque glass to maximize space,improve natural light,protect privacy, ensure safety or enhance aesthetics.</p>
           </div>
-          <div class=" h-auto flex items-center justify-center md:justify-end mt-20" >
+          <div class=" h-auto flex flex-col items-center justify-center md:justify-end mt-32" >
+            <div class="flex w-full pb-7 items-center justify-start">
+              <div class="relative space-x-1 flex text-[#00203FFF] text-xs md:text-sm  font-medium ">
+                 <p data-aos="fade-up" class="  text-sm"> Tap image to view</p>
+                 <span data-aos="fade-up" class="flex  h-3 w-3">
+                    <span class="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-red-600 -z-10 opacity-75 "></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500 "></span>
+                 </span>
+                </div>
+             </div>
             <div id="image-container" class="flex flex-wrap md:grid md:grid-cols-[8rem,8rem,8rem] md:grid-rows-[8rem,8rem] xl:grid-cols-[10rem,10rem,10rem] xl:grid-rows-[10rem,10rem] h-auto gap-3 md:gap-5 xl:gap-7 w-full items-center justify-center md:justify-end">
-                <div class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                <div data-aos="fade-up" class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                 <img  class="image opacity-60 w-full h-full object-fill rounded-xl" src="https://scontent.fcok2-1.fna.fbcdn.net/v/t1.6435-9/46518866_1190917881063941_5817247685891063808_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=DIMH1ZGUEqsAX-d3JxH&_nc_ht=scontent.fcok2-1.fna&oh=00_AfClbE3LHtvjRIKpEmxBHpAPDF2oyy2sNY8THIaKrqWnpw&oe=63DC694F" alt="">
                 <!-- <div class="w-full h-full absolute inset-0 hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70 rounded-xl transition-opacity flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="bag-handle-outline"></ion-icon></div> -->
                 </div>
-                <div class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                <div data-aos="fade-up" class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                 <img  class="image opacity-60 w-full h-full object-fill rounded-xl" src="https://scontent.fcok2-1.fna.fbcdn.net/v/t1.6435-9/46787264_1190917901063939_2680898790658932736_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=kMvDJiuFxTUAX-5fBtS&_nc_ht=scontent.fcok2-1.fna&oh=00_AfDm-3HR-qxZNcHjyAULiYMrlCgHIgS-kZTq44XcQVfVDQ&oe=63DC6EC7" alt="">
                 <!-- <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition-opacity flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="bag-handle-outline"></ion-icon></div> -->
                 </div>
-                <div class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                <div data-aos="fade-up" class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                 <img  class="image opacity-60 w-full h-full object-fill rounded-xl" src="https://scontent.fcok2-1.fna.fbcdn.net/v/t1.6435-9/46747103_1190917791063950_3077099799908974592_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=vQt5cwiLSx0AX8Ic_Zb&tn=xwHAWssqrgu5muM5&_nc_ht=scontent.fcok2-1.fna&oh=00_AfAGVXVxdJrRSRtwGGqeEYc3JHQx3ojLF879RJWx406bxw&oe=63DC62DD" alt="">
                 <!-- <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition-opacity flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="bag-handle-outline"></ion-icon></div> -->
                 </div>
-                <div class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                <div data-aos="fade-up" class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                 <img  class="image opacity-60 w-full h-full object-fill rounded-xl" src="https://scontent.fcok2-1.fna.fbcdn.net/v/t1.6435-9/46800212_1190917834397279_8415924524578504704_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ZABlmETRquAAX94Dq0d&_nc_ht=scontent.fcok2-1.fna&oh=00_AfAX0YvZnXwzNv69mjQLnL7ZAMGp7H16drOzlexhMDfwCg&oe=63DC67F5" alt="">
                 <!-- <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition-opacity flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="bag-handle-outline"></ion-icon></div> -->
                 </div>
-                <div class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                <div data-aos="fade-up" class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                 <img  class="image opacity-60 w-full h-full object-fill rounded-xl" src="https://scontent.fcok2-1.fna.fbcdn.net/v/t1.6435-9/70887585_1408166756005718_2025401771001643008_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a26aad&_nc_ohc=A1QMWq5eiFEAX_chQIf&_nc_ht=scontent.fcok2-1.fna&oh=00_AfAOasQ3-D1b5Q1l9SzgcVwDWr9brrNcOMckQ0E7OH7bPQ&oe=63DC5A8C" alt="">
                 <!-- <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition-opacity flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="bag-handle-outline"></ion-icon></div> -->
                 </div>
-                <div class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                <div data-aos="fade-up" class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                 <img  class="image opacity-60 w-full h-full object-fill rounded-xl" src="https://scontent.fcok2-1.fna.fbcdn.net/v/t1.6435-9/46847906_1190559447766451_238110109262151680_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=7ge6OgA4jZ4AX_8n89t&_nc_ht=scontent.fcok2-1.fna&oh=00_AfD8v_t6a7Jr4HShLWAuyrkVOuNPHIeX-I-u3TeqN0hy4w&oe=63DC702F" alt="">
                 <!-- <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition-opacity flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="bag-handle-outline"></ion-icon></div> -->
                 </div>
-                <div class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                <div data-aos="fade-up"  class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                 <img  class="image opacity-60 w-full h-full object-fill rounded-xl" src="https://scontent.fcok2-1.fna.fbcdn.net/v/t1.6435-9/44986051_1172786876210375_2945682016923811840_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=sSQlHxM0uDUAX_ERNxk&_nc_ht=scontent.fcok2-1.fna&oh=00_AfCAn7bO4TNjKA5IwpCKtMLobdvmn1VaAjyc9OkS9RuONw&oe=63DC6708" alt="">
                 <!-- <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition-opacity flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="bag-handle-outline"></ion-icon></div> -->
                 </div>
-                <div class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                <div data-aos="fade-up" class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                 <img  class="image opacity-60 w-full h-full object-fill rounded-xl" src="https://scontent.fcok2-1.fna.fbcdn.net/v/t1.6435-9/46510941_1190559634433099_5565490296571035648_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=rJPRp-bLsRkAX-__vKH&_nc_ht=scontent.fcok2-1.fna&oh=00_AfBfJlJkJxQP6l22mSWkaaJgr6AW7Qr9hSJqDahdvAEsyw&oe=63DC57BF" alt="">
                 <!-- <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition-opacity flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="bag-handle-outline"></ion-icon></div> -->
                 </div>
-                <div class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                <div data-aos="fade-up" class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                 <img  class="image opacity-60 w-full h-full object-fill rounded-xl" src="https://scontent.fcok2-1.fna.fbcdn.net/v/t1.6435-9/46516607_1190559607766435_8363418184312684544_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=aky0-Cu0gtQAX_3IMnr&_nc_ht=scontent.fcok2-1.fna&oh=00_AfD4apy6ZisFhtIhQX0xpWFU-7nQHSO-nz_7EDFXcI7Byw&oe=63DC70FC" alt="">
                 <!-- <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition-opacity flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="bag-handle-outline"></ion-icon></div> -->
                 </div>
-                <div class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                <div data-aos="fade-up" class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                 <img  class="image opacity-60 w-full h-full object-fill rounded-xl" src="https://scontent.fcok2-1.fna.fbcdn.net/v/t1.6435-9/46764774_1190559557766440_511902656495616000_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=RT9-xh-CsK0AX_IDQiA&_nc_ht=scontent.fcok2-1.fna&oh=00_AfC36L0ogb4iqyYKVefz1MucQAQK0gTZ_XAjyoE--BalcQ&oe=63DC77B9" alt="">
                 <!-- <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition-opacity flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="bag-handle-outline"></ion-icon></div> -->
                 </div>
-                <div class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                <div data-aos="fade-up" class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                 <img  class="image opacity-60 w-full h-full object-fill rounded-xl" src="https://images.jdmagicbox.com/comp/kozhikode/m5/0495px495.x495.190131114624.y1m5/catalogue/raha-living-chelavoor-kozhikode-interior-designers-for-office-z6gcmc5ctg.jpg" alt="">
                 <!-- <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition-opacity flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="bag-handle-outline"></ion-icon></div> -->
                 </div>
                 <div id="popup-img" class="fixed  top-0 left-0 bg-[#000000d1] h-screen w-full z-50 hidden">
-                  <img  id="img" class="absolute bottom-56 md:bottom-32 left-8 md:left-16 lg:left-20 xl:top-20 xl:left-56  rounded-xl  w-5/6 h-2/6 md:h-4/6 xl:w-4/6 xl:h-4/6  object-fill" src="https://scontent.fcok2-1.fna.fbcdn.net/v/t1.6435-9/45202822_1174895129332883_7150806212068507648_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=BeAWjkN7QqgAX8tgDO1&_nc_ht=scontent.fcok2-1.fna&oh=00_AfC7L256KtUQjvg4tQ_HB40I5CUiPppE6VQEDfDv2m8JKA&oe=63DC6A28" alt="">
+                  <img data-aos="fade-up"  id="img" class="absolute bottom-56 md:bottom-32 left-8 md:left-16 lg:left-20 xl:top-20 xl:left-56  rounded-xl  w-5/6 h-2/6 md:h-4/6 xl:w-4/6 xl:h-4/6  object-fill" src="https://scontent.fcok2-1.fna.fbcdn.net/v/t1.6435-9/45202822_1174895129332883_7150806212068507648_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=BeAWjkN7QqgAX8tgDO1&_nc_ht=scontent.fcok2-1.fna&oh=00_AfC7L256KtUQjvg4tQ_HB40I5CUiPppE6VQEDfDv2m8JKA&oe=63DC6A28" alt="">
                   <div class="absolute h-auto left-1/2 right-1/2 bottom-20 md:bottom-8 xl:bottom-12 flex items-center justify-center space-x-3">
                     <span class="text-6xl font-extrabold text-white cursor-pointer mb-2" id="span">&times;</span>
                     <!-- <ion-icon class="text-3xl w-20 h-20 text-black cursor-pointer mb-2" name="close-circle-outline" id="span"></ion-icon> -->
@@ -294,7 +309,7 @@
             </div>
           </div>
           <a href="contact.html">
-            <button class="p-2 mt-12 px-4 text-[#00203FFF] w-44 capitalize text-sm xl:text-base  font-medium rounded-md bg-[#79eeb9] hover:bg-[#5fe6a9] active:bg-[#6febb3] focus:outline-none ">
+            <button data-aos="fade-up" class="p-2 mt-12 px-4 text-[#00203FFF] w-44 capitalize text-sm xl:text-base  font-medium rounded-md bg-[#79eeb9] hover:bg-[#5fe6a9] active:bg-[#6febb3] focus:outline-none ">
               Enquiry
             </button>
           </a> 
@@ -411,5 +426,8 @@ document.body.scrollTop = 0;
 document.documentElement.scrollTop = 0;
 }
 </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="/script.js"></script>
   </body>
 </html>

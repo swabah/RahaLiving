@@ -6,10 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Raha Living</title>
   <link rel="icon" href="/img/logo_raha_living-removebg-preview.png" type="image/icon type">
+  <!-- // scroll Animation link // -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- tailwind link -->
    <script src="https://cdn.tailwindcss.com"></script>   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <!-- font link -->
    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Cairo+Play:wght@300;400&family=Noto+Kufi+Arabic:wght@300;400;500&family=Readex+Pro:wght@300;400&family=Reem+Kufi&family=Roboto+Condensed:ital,wght@1,300&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-<!-- npx tailwindcss -i ./input.css -o ./dist/output.css --watch -->
 <body class="relative h-auto  flex flex-col font-sans-serif2 m-0 p-0">
   <nav id="nav" class="w-full relative z-50">
     <div id="Nav-section" class="flex  bg-[#00203FFF] w-full items-center h-16 px-5  md:px-12 lg:px-14 xl:px-24 translate  transition-all duration-100  justify-between">
@@ -17,7 +20,6 @@
         <a href="index.html">
         <img class="md:w-3/3 md:h-8 h-[1.75rem] w-full" src="/img/icon raha dup.png" alt="">
         </a>
-        <!-- <h2 class=" text-white  font-medium pl-12 text-xs capitalize">Home Decor</h2> -->
       </div>
       <div class="relative  space-x-5 hidden md:flex items-center justify-end">
         <a class="capitalize text-sm transition lg:text-base text-white font-medium hover:text-[#ADEFD1FF] " href="index.html">home</a>
@@ -245,13 +247,13 @@
         
   </script> 
   <section id="FirstSection" style="background-image: url('/img/pexels-maksim-goncharenok-4352247.jpg');" class="bg-fixed bg-center bg-no-repeat bg-cover w-auto pb-24 lg:pb-0 h-[530px] lg:h-[770px] flex flex-col items-center justify-start px-3 md:px-8 lg:px-12 xl:px-24">
-        <div  class="w-full  h-auto bg-no-repeat flex-col flex items-center text-center justify-center md:items-start md:text-start md:pl-20 lg:pl-40 mt-32 lg:mt-44 ">
+        <div data-aos="fade-up" class="w-full  h-auto bg-no-repeat flex-col flex items-center text-center justify-center md:items-start md:text-start md:pl-20 lg:pl-40 mt-20 lg:mt-32 ">
               <div class="w-auto space-x-2 hover:text-[#ADEFD1FF] flex items-center justify-between h-auto p-1  rounded-lg">
                 <p class=" capitalize  text-[#00203FFF] font-medium text-xs  md:text-sm "> <span class="typed-text"></span><span class="cursor">&nbsp</span></p>
               </div>
-              <h2 class="mt-2 w-[300px] md:w-[500px] lg:w-[700px] leading-none text-[#00203FFF] text-4xl md:text-5xl lg:text-7xl tracking-wide  text-white font-bold ">Modern Design <span class="">Solutions!</span></h2>
+              <h2   class="mt-2 w-[300px] md:w-[500px] lg:w-[700px] leading-none text-[#00203FFF] text-4xl md:text-5xl lg:text-7xl tracking-wide  text-white font-bold ">Modern Design <span class="">Solutions!</span></h2>
         </div>
-        <div  class="w-full  h-auto flex-col flex items-center text-start justify-center md:justify-start  md:pl-20 lg:pl-40">
+        <div data-aos="fade-up" class="w-full  h-auto flex-col flex items-center text-start justify-center md:justify-start  md:pl-20 lg:pl-40">
            <div class="w-auto md:w-full  h-auto flex-col flex items-start text-start justify-center md:justify-start pt-7 md:pt-16 lg:pt-20">
              <div class="relative  flex flex-col items-center md:items-start justify-center">
                  <div class="w-auto p-1.5 px-0.5 md:px-3 rounded-md flex items-center ring-1 ring-[#00203FFF] justify-center text-center h-auto space-x-0.5 md:space-x-2 ">
@@ -288,7 +290,7 @@
   </section>
   <section  id="secendSection" class="w-full h-auto flex flex-col items-center justify-center ">
    <div class="bg-[#00203FFF]  w-full h-full  flex flex-col items-center justify-center py-5 xl:py-12 px-5 xl:px-12 2xl:px-24">
-    <div class="w-[280px] md:w-[400px] lg:w-[750px] xl:w-[1050px]  h-auto flex flex-col items-center justify-center space-y-0.5 lg:space-y-0">
+    <div data-aos="fade-up"  class="w-[280px] md:w-[400px] lg:w-[750px] xl:w-[1050px]  h-auto flex flex-col items-center justify-center space-y-0.5 lg:space-y-0">
       <p class="w-[280px] md:w-[400px] lg:w-[750px] xl:w-[1050px] lg:pl-4 xl:pl-12 text-[#fff] text-center lg:text-start  text-xs md:text-sm xl:text-lg  font-thin ">For Your Dream House</p>
       <h2 class="w-[280px] md:w-[400px] lg:w-[750px]  xl:w-[1050px]  text-[#6ae2ac] text-center text-base md:text-4xl xl:text-5xl  font-medium ">Interior Designing Firm Based In Kozhikode</h2>
       <h2 class="w-[280px] md:w-[400px] lg:w-[750px]  xl:w-[1050px]  text-[#6ae2ac] text-center text-xs md:text-sm xl:text-xl tracking-wider xl:mt-0.5 font-thin ">In The beatiful city of kozhikode, we have just begun to make every house simple and beautiful.</h2>
@@ -299,24 +301,24 @@
       <!-- <div class="w-[1050px] h-[590px]">
         <video class="w-full h-full rounded-lg  object-cover" src="/img/321052994_945131243559055_4316437265300679888_n.mp4"></video>
       </div> -->
-      <div class="mt-10 w-full h-full  flex flex-col items-center justify-center pb-20 lg:pb-40">
+      <div  class="mt-10 w-full h-full  flex flex-col items-center justify-center pb-20 lg:pb-40">
             <div class=" w-full h-full  flex flex-wrap items-start justify-center ">
-                <div class="flex w-44 md:w-44 lg:w-52 xl:w-64 h-auto flex-col text-center rounded-lg  items-center justify-evenly p-5 ">
+                <div data-aos="fade-up" class="flex w-44 md:w-44 lg:w-52 xl:w-64 h-auto flex-col text-center rounded-lg  items-center justify-evenly p-5 ">
                    <h1 class="text-sm md:text-base lg:text-xl xl:text-2xl text-[#00203FFF] py-1 font-medium capitalize">Building Planning</h1>
                   <img class="w-7 md:w-10 xl:w-14 grayscale-50 mt-2 md:mt-3 xl:mt-4" src="https://rahaliving.com/wp-content/uploads/2018/10/planner-free-img-1.png" alt="">
                   <p class="pt-1 md:pt-2 text-[#00203FFF] text-xs xl:text-base md:font-thin">Share your ideas and we will enhance your idea into an amazing Masterpiece.</p>
                 </div>
-                <div class="flex w-44 md:w-44 lg:w-52 xl:w-64 h-auto flex-col text-center rounded-lg  items-center justify-evenly p-5 ">
+                <div data-aos="fade-up" class="flex w-44 md:w-44 lg:w-52 xl:w-64 h-auto flex-col text-center rounded-lg  items-center justify-evenly p-5 ">
                    <h1 class="text-sm md:text-base lg:text-xl xl:text-2xl text-[#00203FFF] py-1 font-medium capitalize">Interiors Spaces</h1>
                   <img class="w-7 md:w-10 xl:w-14 grayscale-50 mt-2 md:mt-3 xl:mt-4" src="https://rahaliving.com/wp-content/uploads/2018/10/interior-free-img-1.png" alt="">
                   <p class="pt-1 md:pt-2 text-[#00203FFF] text-xs xl:text-base md:font-thin">Management of space is a very fundamental element in interior designing</p>
                 </div>
-                <div class="flex w-44 md:w-44 lg:w-52 xl:w-64 h-auto flex-col text-center rounded-lg  items-center justify-evenly p-5 ">
+                <div data-aos="fade-up" class="flex w-44 md:w-44 lg:w-52 xl:w-64 h-auto flex-col text-center rounded-lg  items-center justify-evenly p-5 ">
                    <h1 class="text-sm md:text-base lg:text-xl xl:text-2xl text-[#00203FFF] py-1 font-medium capitalize">Quality products</h1>
                   <img class="w-7 md:w-10 xl:w-14 grayscale-50 mt-2 md:mt-3 xl:mt-4" src="https://rahaliving.com/wp-content/uploads/2018/10/real-estate-free-img-1.png" alt="">
                   <p class="pt-1 md:pt-2 text-[#00203FFF] text-xs xl:text-base md:font-thin">We provide good branded materials only to renovate and design.</p>
                 </div>
-                <div class="flex w-44 md:w-44 lg:w-52 xl:w-64 h-auto flex-col text-center rounded-lg  items-center justify-evenly p-5 ">
+                <div data-aos="fade-up" class="flex w-44 md:w-44 lg:w-52 xl:w-64 h-auto flex-col text-center rounded-lg  items-center justify-evenly p-5 ">
                    <h1 class="text-sm md:text-base lg:text-xl xl:text-2xl text-[#00203FFF] py-1 font-medium capitalize">Free Consultation</h1>
                   <img class="w-7 md:w-10 xl:w-14 grayscale-50 mt-2 md:mt-3 xl:mt-4" src="https://rahaliving.com/wp-content/uploads/2018/10/consultation-free-img-1.png" alt="">
                   <p class="pt-1 md:pt-2 text-[#00203FFF] text-xs xl:text-base md:font-thin">We are always just a phone call away, don't hesitate to call.</p>
@@ -326,37 +328,37 @@
       <div class="w-full  md:mt-24 lg:mt-36 xl:mt-48  h-full space-x-0 flex flex-col lg:flex-row items-center justify-center space-y-8 lg:space-y-0">
         <div class="lg:w-1/2 h-auto flex items-center justify-center md:justify-end" >
             <div class="flex flex-wrap md:grid md:grid-cols-[8rem,8rem,8rem] md:grid-rows-[8rem,8rem] xl:grid-cols-[10rem,10rem,10rem] xl:grid-rows-[10rem,10rem] h-auto gap-3 xl:gap-5 w-full items-center justify-center md:justify-end">
-              <a href="GlassWork.html">
+              <a data-aos="fade-right" href="GlassWork.html">
                 <div class="relative cursor-pointer shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                   <img  class="w-full h-full object-fill rounded-xl" src="https://www.sageglass.com/sites/default/files/styles/mirror/public/2022-10/DMK_SAGE_GLATT_15-opt.jpg?h=170ba4b8&itok=LATNhsmv" alt="">
                   <div class="w-full h-full absolute inset-0 hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70 rounded-xl transition flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="aperture-outline"></ion-icon></div>
                   </div>
               </a>
-              <a href="Officespace.html">
+              <a data-aos="fade-down" href="Officespace.html">
                 <div class="relative cursor-pointer shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                   <img  class="w-full h-full object-cover rounded-xl" src="https://www.bergerpaints.com/blog/wp-content/uploads/2022/04/Office-room.png" alt="">
                   <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="aperture-outline"></ion-icon></div>
                 </div>
               </a>
-              <a href="Kitchen.html">
+              <a data-aos="fade-left" href="Kitchen.html">
                 <div class="relative cursor-pointer shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                   <img  class="w-full h-full object-cover rounded-xl" src="https://images.livspace-cdn.com/plain/https://jumanji.livspace-cdn.com/magazine/wp-content/uploads/sites/4/2022/01/13080239/cover-5.jpg" alt="">
                   <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="aperture-outline"></ion-icon></div>
                 </div>
               </a>  
-              <a href="BedRoom.html">
+              <a data-aos="fade-right" href="BedRoom.html">
                 <div class="relative cursor-pointer shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                   <img  class="w-full h-full object-cover rounded-xl" src="https://amazingarchitecture.com/storage/1019/bedroom-minimalism.jpg" alt="">
                   <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="aperture-outline"></ion-icon></div>
                   </div>
               </a>
-              <a href="LivingRoom.html">
+              <a data-aos="fade-up" href="LivingRoom.html">
                 <div class="relative cursor-pointer shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                   <img  class="w-full h-full object-cover rounded-xl" src="https://images.unsplash.com/photo-1615529182904-14819c35db37?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGl2aW5nJTIwcm9vbSUyMGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="">
                   <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="aperture-outline"></ion-icon></div>
                   </div>
               </a>
-              <a href="kids.html">
+              <a data-aos="fade-left" href="kids.html">
                 <div class="relative cursor-pointer shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                   <img  class="w-full h-full object-fill rounded-xl" src="http://cdn.home-designing.com/wp-content/uploads/2010/06/Boys-Bedroom-on-wheels.jpg" alt="">
                   <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="aperture-outline"></ion-icon></div>
@@ -364,7 +366,7 @@
               </a>
             </div>
         </div>
-        <div class="lg:w-1/2 h-full lg:pl-8 xl:pl-5 text-center lg:text-start flex flex-col items-center lg:items-start justify-center" >
+        <div data-aos="zoom-in" class="lg:w-1/2 h-full lg:pl-8 xl:pl-5 text-center lg:text-start flex flex-col items-center lg:items-start justify-center" >
             <h1 class="w-[280px] md:w-[400px] lg:w-[350px] xl:w-[500px]  text-xl xl:text-4xl pb-5 md:pb-5 xl:pb-3 text-[#00203FFF]  font-medium " >Interior Design doesn't have to be expensive or complicated! It should be smart & user friendly.</h1>
             <p class=" w-[280px] md:w-[400px] lg:w-[350px] xl:w-[500px]  text-sm xl:text-lg pb-4 md:pb-7 xl:pb-4  text-[#00203FFF]  font-thin  leading-snug" >At RahaLiving home interiors Chelavoor, we provide individual consultation, design, production, and execution for all residential interiors. From space planning, perceiving suitable furniture for a house</p>
             <a href="Interior.html">
@@ -386,36 +388,36 @@
          </div>
          
       <div id="image-container" class=" w-full xl:w-[950px] pt-10 lg:pt-20 h-auto flex flex-wrap gap-8 items-center justify-center">
-        <div class="relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
-          <img class="image hover:scale-125 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/70943079_1408177712671289_2687708907983339520_n.jpg?stp=dst-jpg_s960x960&_nc_cat=106&ccb=1-7&_nc_sid=a26aad&_nc_ohc=B0ndXpoWp-0AX-VgrV1&_nc_ht=scontent.fccj3-1.fna&oh=00_AfDh1XQcS9qL6yBIPl7O3vxA7WWSPvlEnbcNUTHlYwwq-A&oe=63E22978" alt="">
+        <div data-aos="fade-up" class="relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
+          <img class="image hover:scale-110 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/70943079_1408177712671289_2687708907983339520_n.jpg?stp=dst-jpg_s960x960&_nc_cat=106&ccb=1-7&_nc_sid=a26aad&_nc_ohc=B0ndXpoWp-0AX-VgrV1&_nc_ht=scontent.fccj3-1.fna&oh=00_AfDh1XQcS9qL6yBIPl7O3vxA7WWSPvlEnbcNUTHlYwwq-A&oe=63E22978" alt="">
           <h2  class="absolute cursor-pointer left-2 bottom-2 h-5 xl:h-6 w-auto bg-white hover:bg-[#79eeb9]  active:bg-[#1ef38c]  transition text-[#00203FFF] opacity-100 rounded-full  flex  items-center justify-center md:justify-between px-3  xl:space-x-2  font-medium text-xs  capitalize">Kitchen cabinet, shoba city, thrissur</h2>
        </div>
-        <div class="relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
-          <img class="image hover:scale-125 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/70189106_1408166709339056_3132076974730641408_n.jpg?stp=dst-jpg_p720x720&_nc_cat=111&ccb=1-7&_nc_sid=a26aad&_nc_ohc=Huu4OdYaXQkAX8_8XfB&_nc_ht=scontent.fccj3-1.fna&oh=00_AfBVFJHaQg9R-okkm5HumKiDl3BlEss8zig31jj_AKggTw&oe=63E2184D" alt="">
+        <div data-aos="fade-up" class="relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
+          <img class="image hover:scale-110 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/70189106_1408166709339056_3132076974730641408_n.jpg?stp=dst-jpg_p720x720&_nc_cat=111&ccb=1-7&_nc_sid=a26aad&_nc_ohc=Huu4OdYaXQkAX8_8XfB&_nc_ht=scontent.fccj3-1.fna&oh=00_AfBVFJHaQg9R-okkm5HumKiDl3BlEss8zig31jj_AKggTw&oe=63E2184D" alt="">
           <h2  class="absolute cursor-pointer left-2 bottom-2 h-5 xl:h-6 w-auto bg-white hover:bg-[#79eeb9]  active:bg-[#1ef38c]  transition text-[#00203FFF] opacity-100 rounded-full  flex  items-center justify-center md:justify-between px-3  xl:space-x-2  font-medium text-xs  capitalize">Wooden Handrail, kalaranthiry</h2>
           </div>
-        <div class="relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
-          <img class="image hover:scale-125 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/59565573_1302676446554750_893445071213428736_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=7DGykXARvhEAX_T4MQM&tn=xwHAWssqrgu5muM5&_nc_ht=scontent.fccj3-1.fna&oh=00_AfD5rEzl6hhTxoicDcxN1WNU8wJdQizjYbGhhDNGuHSC5A&oe=63E220EB" alt="">
+        <div data-aos="fade-up" class="relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
+          <img class="image hover:scale-110 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/59565573_1302676446554750_893445071213428736_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=7DGykXARvhEAX_T4MQM&tn=xwHAWssqrgu5muM5&_nc_ht=scontent.fccj3-1.fna&oh=00_AfD5rEzl6hhTxoicDcxN1WNU8wJdQizjYbGhhDNGuHSC5A&oe=63E220EB" alt="">
           <h2  class="absolute cursor-pointer left-2 bottom-2 h-5 xl:h-6 w-auto bg-white hover:bg-[#79eeb9]  active:bg-[#1ef38c] transition text-[#00203FFF] opacity-100 rounded-full  flex  items-center justify-center md:justify-between px-3  xl:space-x-2  font-medium text-xs  capitalize">Modular kitchen, Wayanad</h2>
         </div>
-        <div class="relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
-          <img class="image hover:scale-125 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/57034809_1289826241173104_7396168579768385536_n.jpg?stp=dst-jpg_p720x720&_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=JnFIBUiCutkAX8IA_WR&_nc_ht=scontent.fccj3-1.fna&oh=00_AfBAoYzGaQ94QKNPv-uzZo1tolnp8QXgjEQrFo1e3dxLEw&oe=63E23B0F" alt="">
+        <div data-aos="fade-up" class="relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
+          <img class="image hover:scale-110 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/57034809_1289826241173104_7396168579768385536_n.jpg?stp=dst-jpg_p720x720&_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=JnFIBUiCutkAX8IA_WR&_nc_ht=scontent.fccj3-1.fna&oh=00_AfBAoYzGaQ94QKNPv-uzZo1tolnp8QXgjEQrFo1e3dxLEw&oe=63E23B0F" alt="">
           <h2  class="absolute cursor-pointer left-2 bottom-2 h-5 xl:h-6 w-auto bg-white hover:bg-[#79eeb9]  active:bg-[#1ef38c] transition text-[#00203FFF] opacity-100 rounded-full  flex  items-center justify-center md:justify-between px-3  xl:space-x-2  font-medium text-xs  capitalize">Modular Kitchen, Burj Alhind </h2>
         </div>
-        <div class="relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
-          <img class="image hover:scale-125 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/45202822_1174895129332883_7150806212068507648_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=AUs5YV-nXvgAX9JYePn&_nc_ht=scontent.fccj3-1.fna&oh=00_AfBi-nRRnSyjM0Vd48Wau7YikBxunaMXeGuDvxOZx5Vnig&oe=63E220A8" alt="">
+        <div data-aos="fade-up" class="relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
+          <img class="image hover:scale-110 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/45202822_1174895129332883_7150806212068507648_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=AUs5YV-nXvgAX9JYePn&_nc_ht=scontent.fccj3-1.fna&oh=00_AfBi-nRRnSyjM0Vd48Wau7YikBxunaMXeGuDvxOZx5Vnig&oe=63E220A8" alt="">
           <h2  class="absolute cursor-pointer left-2 bottom-2 h-5 xl:h-6 w-auto bg-white hover:bg-[#79eeb9]  active:bg-[#1ef38c] transition text-[#00203FFF] opacity-100 rounded-full  flex  items-center justify-center md:justify-between px-3  xl:space-x-2  font-medium text-xs  capitalize">Home Decor, Mathara, Calicat</h2>
         </div>
-        <div class="relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
-          <img class="image hover:scale-125 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/46516607_1190559607766435_8363418184312684544_n.jpg?stp=dst-jpg_p480x480&_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=6mHNVv-mdQ4AX870s5Q&_nc_ht=scontent.fccj3-1.fna&oh=00_AfD0qBV7475_GCTV8aXLF0uLL3WUsLTCzCtcN5GI97bbXQ&oe=63E2277C" alt="">
+        <div data-aos="fade-up" class="relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
+          <img class="image hover:scale-110 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/46516607_1190559607766435_8363418184312684544_n.jpg?stp=dst-jpg_p480x480&_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=6mHNVv-mdQ4AX870s5Q&_nc_ht=scontent.fccj3-1.fna&oh=00_AfD0qBV7475_GCTV8aXLF0uLL3WUsLTCzCtcN5GI97bbXQ&oe=63E2277C" alt="">
           <h2  class="absolute cursor-pointer left-2 bottom-2 h-5 xl:h-6 w-auto bg-white hover:bg-[#79eeb9]  active:bg-[#1ef38c] transition text-[#00203FFF] opacity-100 rounded-full  flex  items-center justify-center md:justify-between px-3  xl:space-x-2  font-medium text-xs  capitalize">Glass Ground, Knwoledge City</h2>
         </div>
-        <div class="relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
-          <img class="image hover:scale-125 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/45282633_1174901355998927_8639025939344261120_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=4iz39vU5ltYAX_SGyUM&_nc_ht=scontent.fccj3-1.fna&oh=00_AfDOlICci4Bzsfaa5X0l310Dj1yEO5tDThPsFM0XfjoJlQ&oe=63E20ADB" alt="">
+        <div data-aos="fade-up" class="relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
+          <img class="image hover:scale-110 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/45282633_1174901355998927_8639025939344261120_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=4iz39vU5ltYAX_SGyUM&_nc_ht=scontent.fccj3-1.fna&oh=00_AfDOlICci4Bzsfaa5X0l310Dj1yEO5tDThPsFM0XfjoJlQ&oe=63E20ADB" alt="">
           <h2  class="absolute cursor-pointer left-2 bottom-2 h-5 xl:h-6 w-auto bg-white hover:bg-[#79eeb9]  active:bg-[#1ef38c] transition text-[#00203FFF] opacity-100 rounded-full  flex  items-center justify-center md:justify-between px-3  xl:space-x-2  font-medium text-xs  capitalize">Home Decor, Kozhickode</h2>
         </div>
-        <div class=" relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
-          <img class="image hover:scale-125 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/46847906_1190559447766451_238110109262151680_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=yi0px95ekVgAX-Ml6Wh&_nc_ht=scontent.fccj3-1.fna&oh=00_AfAt-zQNYaq1tnqE4-52hhWdPbr9XbnhOwJ0YJnZyY3BEg&oe=63E226AF" alt="">
+        <div data-aos="fade-up" class=" relative w-full bg-black  overflow-hidden rounded-xl h-32 md:w-60 md:h-32 cursor-pointer  xl:w-72 xl:h-40">
+          <img class="image hover:scale-110 duration-700 opacity-60 hover:opacity-100 active:opacity-70 w-full grayscale-0  hover:grayscale-100 shadow-md hover:shadow-lg transition-all shadow-[#00203FFF] h-full object-cover rounded-xl " src="https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/46847906_1190559447766451_238110109262151680_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=yi0px95ekVgAX-Ml6Wh&_nc_ht=scontent.fccj3-1.fna&oh=00_AfAt-zQNYaq1tnqE4-52hhWdPbr9XbnhOwJ0YJnZyY3BEg&oe=63E226AF" alt="">
           <h2  class=" absolute cursor-pointer left-2 bottom-2 h-5 xl:h-6 w-auto bg-white hover:bg-[#79eeb9]  active:bg-[#1ef38c] transition text-[#00203FFF] opacity-100 rounded-full  flex  items-center justify-center md:justify-between px-3  xl:space-x-2  font-medium text-xs  capitalize">BlueBrain center, kuttikattoor</h2>
         </div>
               <div id="popup-img" class="fixed  top-0 left-0 bg-[#000000f0]  h-screen w-full z-50 hidden">
@@ -442,7 +444,7 @@
             </script>
       </div>
       <a href="contact.html">
-        <button class="p-2 mt-12 px-4 text-[#00203FFF] w-44 capitalize text-sm xl:text-base  font-medium rounded-md bg-[#79eeb9] hover:bg-[#5fe6a9] active:bg-[#6febb3] focus:outline-none ">
+        <button data-aos="fade-up"  class="p-2 mt-12 px-4 text-[#00203FFF] w-44 capitalize text-sm xl:text-base  font-medium rounded-md bg-[#79eeb9] hover:bg-[#5fe6a9] active:bg-[#6febb3] focus:outline-none ">
          Enquiry
         </button>
       </a> 
@@ -450,16 +452,16 @@
     </div>
   </section>
   <footer  id="FivethSection" class="w-full h-auto  bg-[#00203FFF]">
-    <div class="  w-full h-full  transition-all text-[#79eeb9]  p-2 px-5 md:px-12 lg:px-14 xl:px-24">
-      <div class="w-full h-full my-10 flex items-start justify-between">
-        <div class="h-auto w-full  flex flex-col md:flex-row  items-center md:items-start justify-between space-y-7 md:space-y-0 md:space-x-12 xl:space-x-16 ">
-          <div class="w-auto text-sm lg:text-lg font-thin space-y-3 flex flex-col text-start items-center md:items-start justify-center">
+    <div  class="  w-full h-full  transition-all text-[#79eeb9]  p-2 px-5 md:px-12 lg:px-14 xl:px-24">
+      <div  class="w-full h-full my-10 flex flex-col items-start justify-between">
+        <div  class="h-auto w-full  flex flex-col md:flex-row  items-center md:items-start justify-between space-y-7 md:space-y-0 md:space-x-12 xl:space-x-16 ">
+          <div  class="w-auto text-sm lg:text-lg font-thin space-y-3 flex flex-col text-start items-center md:items-start justify-center">
             <h2 class=" pb-5 font-medium  text-white">Get in touch</h2>
             <p class="flex w-auto h-auto items-start justify-center space-x-2"><ion-icon class="text-2xl text-white" name="wallet-outline"></ion-icon><a class=" " href="">V.M Arcade, Chelavoor, Kozhikode-Wayanad Road, kerala</a></p>
             <p class="flex w-auto h-auto items-start justify-center space-x-2 "><ion-icon class="text-xl text-white" name="call-outline"></ion-icon><a class="hover:text-white  transition" href="tel:+91 9400523355">+91 9400523355 <br href="tel:+91 8281073564" class="hidden md:flex pr-6 md:pl-0"> +91 8281073564</a></p>
             <p class="flex w-auto h-auto items-start justify-center space-x-2 "><ion-icon class="text-xl text-white"  name="mail-outline"></ion-icon><a class="hover:text-white  transition" href="mailto:rahaliving@gmail.com">rahaliving@gmail.com</a></p>
           </div>
-          <div class="w-auto md:w-52 text-sm lg:text-lg  font-thin space-y-2 flex flex-col items-center md:items-start">
+          <div  class="w-auto md:w-52 text-sm lg:text-lg  font-thin space-y-2 flex flex-col items-center md:items-start">
             <p class="  font-medium pb-5 text-white">Interior Designs</p>
             <a class="hover:text-white transition" href="Interior.html" >Interior</a>
             <a class="hover:text-white transition" href="Officespace.html">Office Space</a>
@@ -476,7 +478,7 @@
             <a class="hover:text-white transition" href="contact.html">Contact us</a>
             <a></a>
           </div>
-          <div class="md:w-20 w-auto  flex flex-col items-center justify-center md:justify-start space-y-2">
+          <div  class="md:w-20 w-auto  flex flex-col items-center justify-center md:justify-start space-y-2">
             <a class=" capitalize text-[#00203FFF] px-2  lg:px-3.5 text-sm lg:text-base pt-1 w-auto h-auto bg-[#ADEFD1FF] rounded pb-1.5 font-medium " href="https://www.instagram.com/rahaliving/">instagram</a>
              <div class="w-auto mt-1 flex space-x-1 items-center h-auto">
                  <a class=" text-base lg:text-lg text-[#ADEFD1FF]" href="https://www.facebook.com/rahaliving/">
@@ -497,14 +499,14 @@
         
       </div>
 
-    </div>
-    <div class="w-full h-full transition-all text-[#79eeb9] flex items-center justify-center md:items-start md:justify-start bg-[#00203FFF]   ">
-        <h1 class="text-xs md:text-base  p-2 px-5 md:px-12 lg:px-14 xl:px-24 font-medium  ">© 2019 at-rahaiving.in All rights reserved<br class="flex md:hidden  "> | Made by <a class="underline pl-1 pt-2" href="https://www.instagram.com/Sw_abah">Sw_abah</a> </h1>
+      <div  class="w-full h-full transition-all text-[#79eeb9] flex items-center justify-center md:items-start md:justify-start  ">
+          <h1 class="text-xs md:text-base  p-2  font-medium  ">© 2019 at-rahaiving.in All rights reserved<br class="flex md:hidden  "> | Made by <a class="underline pl-1 pt-2" href="https://www.instagram.com/Sw_abah">Sw_abah</a> </h1>
+      </div>
     </div>
   </footer>
 
     <button onclick="topFunction()" id="movetop" class="fixed z-30 right-7 bottom-5 sm:right-12 sm:bottom-6" title="Go to top">
-        <div class=" bg-[#79eeb9] hover:bg-[#5fe6a9] active:bg-[#6febb3] rounded-full p-2  ">
+        <div data-aos="fade-down" class=" bg-[#79eeb9] hover:bg-[#5fe6a9] active:bg-[#6febb3] rounded-full p-2  ">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-7 hover:text-[#00203FFF]  cursor-pointer text-[#00203FFF] h-7 ">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
               </svg>
@@ -530,6 +532,15 @@
       document.documentElement.scrollTop = 0;
     }
   </script>
+  <!-- Scroll animation script  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="/script.js"></script>
+  <!-- <script>
+    AOS.init({
+      duration: 2000,
+      once: true,
+    });
+  </script> -->
 </body>
 
 </html>

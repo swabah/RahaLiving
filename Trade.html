@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trade | Raha Living</title>
     <link rel="icon" href="https://o.remove.bg/downloads/b2821016-4437-44ec-8d35-c761a20c7f10/logo_raha_living-removebg-preview.png" type="image/icon type">
-    <script src="https://cdn.tailwindcss.com"></script>   <!-- <link rel="stylesheet" href="home.css" type="text/css"> -->
-   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Cairo+Play:wght@300;400&family=Noto+Kufi+Arabic:wght@300;400;500&family=Readex+Pro:wght@300;400&family=Reem+Kufi&family=Roboto+Condensed:ital,wght@1,300&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
-<!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
+      <!-- // scroll Animation link // -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <!-- tailwind link -->
+       <script src="https://cdn.tailwindcss.com"></script>   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+       <!-- font link -->
+       <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Cairo+Play:wght@300;400&family=Noto+Kufi+Arabic:wght@300;400;500&family=Readex+Pro:wght@300;400&family=Reem+Kufi&family=Roboto+Condensed:ital,wght@1,300&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+       <!-- ion iconic link  -->
+       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </head>
 <body class="relative h-auto flex flex-col font-sans-serif2 m-0 p-0 bg-gradient-to-r from-rose-100 to-teal-100 ">
     <nav id="nav" class="w-full relative z-50">
@@ -190,11 +194,11 @@
       
         <div class="flex flex-col items-center justify-center  w-auto  h-auto px-5  md:px-12 lg:px-14 xl:px-24 py-12 md:py-32">
           <div class=" w-full   h-auto flex items-center justify-center">
-            <h2 class="text-3xl md:text-4xl xl:text-5xl font-medium capitalize text-[#00203FFF] text-center">  glass and intirior<br class="flex md:hidden"> accessories</h2>
+            <h2 data-aos="fade-up" class="text-3xl md:text-4xl xl:text-5xl font-medium capitalize text-[#00203FFF] text-center">  glass and intirior<br class="flex md:hidden"> accessories</h2>
           </div>
           <div class=" pt-16 md:pt-16 flex flex-col space-y-5 md:space-y-0 md:flex-row items-center justify-center md:justify-evenly w-auto md:w-[650px]">
             <div class="w-full relative flex flex-col items-center justify-center text-center  space-y-4">
-              <h2 id="clearBtn" class="flex  items-center justify-center  text-center cursor-pointer text-lg md:text-xl font-light border-b-2 border-[#00203FFF] pb-2  rounded-t-md active:bg-[#ffffff5b] focus:outline-none pt-2 p-2">Claer Glass <ion-icon id="arrowright1" class="flex text-2xl pl-1  text-[#00203FFF] transition-transform duration-100" id="icon1" name="chevron-forward-outline"></ion-icon><ion-icon id="arrowbottom1" class="hidden text-2xl pl-1 pt-1 text-red-700 transition-transform duration-100" name="close-circle-outline"></ion-icon></h2>
+              <h2 data-aos="fade-up" id="clearBtn" class="flex  items-center justify-center  text-center cursor-pointer text-lg md:text-xl font-light border-b-2 border-[#00203FFF] pb-2  rounded-t-md active:bg-[#ffffff5b] focus:outline-none pt-2 p-2">Claer Glass <ion-icon id="arrowright1" class="flex text-2xl pl-1  text-[#00203FFF] transition-transform duration-100" id="icon1" name="chevron-forward-outline"></ion-icon><ion-icon id="arrowbottom1" class="hidden text-2xl pl-1 pt-1 text-red-700 transition-transform duration-100" name="close-circle-outline"></ion-icon></h2>
               <ul id="clearDrop" class=" hidden absolute bg-[#00203FFF] text-white top-7 w-52 md:w-72 z-10 border-t-2 border-[#00203FFF] flex-col transition-transform text-sm md:text-lg items-start justify-center  text-start p-5">
                 <li class="border-t-[1px] md:border-none   border-[#22355be8] p-2 w-full"> <span class="text-[#ADEFD1FF]" >  4 </span>mm at <span class="text-[#ADEFD1FF]" >  Rs.32 </span>per sq.ft</li>
                 <li class="border-t-[1px] md:border-none   border-[#22355be8] p-2 w-full"> <span class="text-[#ADEFD1FF]" >  5</span>mm at  <span class="text-[#ADEFD1FF]" > Rs.40</span> per sq.ft</li>
@@ -205,7 +209,7 @@
               </ul>
             </div>
             <div class="w-full relative  flex flex-col items-center justify-center text-center  space-y-4">
-              <h2 id="colourBtn" class="flex  items-center justify-center  text-center cursor-pointer text-lg md:text-xl font-light border-b-2 border-[#00203FFF] pb-2  rounded-t-md active:bg-[#ffffff5b]  focus:outline-none pt-2 p-2">Colour Glass<ion-icon id="arrowright2" class="flex text-2xl pl-1  text-[#00203FFF] transition-transform duration-100" id="icon1" name="chevron-forward-outline"></ion-icon><ion-icon  id="arrowbottom2" class="hidden text-2xl pl-1 pt-1 text-red-700 transition-transform duration-100"  name="close-circle-outline"></ion-icon></h2>
+              <h2 data-aos="fade-up" id="colourBtn" class="flex  items-center justify-center  text-center cursor-pointer text-lg md:text-xl font-light border-b-2 border-[#00203FFF] pb-2  rounded-t-md active:bg-[#ffffff5b]  focus:outline-none pt-2 p-2">Colour Glass<ion-icon id="arrowright2" class="flex text-2xl pl-1  text-[#00203FFF] transition-transform duration-100" id="icon1" name="chevron-forward-outline"></ion-icon><ion-icon  id="arrowbottom2" class="hidden text-2xl pl-1 pt-1 text-red-700 transition-transform duration-100"  name="close-circle-outline"></ion-icon></h2>
               <ul id="colourDrop" class=" hidden absolute bg-[#00203FFF] text-white top-7 w-72 md:w-96 z-10 border-t-2 border-[#00203FFF]  flex-col transition-transform text-sm md:text-lg items-center justify-center  text-start p-5">
                 <li class="border-t-[1px] md:border-none   border-[#22355be8] p-2 w-full"><span class="text-[#ADEFD1FF]" >  3</span>mm grey at   <span class="text-[#ADEFD1FF]" >  Rs.36  </span> per sq.ft</li>
                 <li class="border-t-[1px] md:border-none   border-b-[1px] border-[#22355be8] p-2 w-full"><span class="text-[#ADEFD1FF]" >  12</span>mm brown at <span class="text-[#ADEFD1FF]" >  Rs.125 </span>  per sq.ft</li>
@@ -217,7 +221,7 @@
               </ul>
             </div> 
             <div class="w-full relative flex flex-col items-center justify-center text-center  space-y-4">
-              <h2 id="MirrorBtn" class="flex  items-center justify-center  text-center cursor-pointer text-lg md:text-xl font-light border-b-2 border-[#00203FFF] pb-2  rounded-t-md active:bg-[#ffffff5b]  focus:outline-none pt-2 p-2">Mirror Glass<ion-icon id="arrowright3" class="flex text-2xl pl-1  text-[#00203FFF] transition-transform duration-100" id="icon1" name="chevron-forward-outline"></ion-icon><ion-icon id="arrowbottom3" class="hidden text-2xl pl-1 pt-1 text-red-700 transition-transform duration-100"  name="close-circle-outline"></ion-icon></h2>
+              <h2 data-aos="fade-up" id="MirrorBtn" class="flex  items-center justify-center  text-center cursor-pointer text-lg md:text-xl font-light border-b-2 border-[#00203FFF] pb-2  rounded-t-md active:bg-[#ffffff5b]  focus:outline-none pt-2 p-2">Mirror Glass<ion-icon id="arrowright3" class="flex text-2xl pl-1  text-[#00203FFF] transition-transform duration-100" id="icon1" name="chevron-forward-outline"></ion-icon><ion-icon id="arrowbottom3" class="hidden text-2xl pl-1 pt-1 text-red-700 transition-transform duration-100"  name="close-circle-outline"></ion-icon></h2>
               <ul id="MirrorDrop" class=" hidden absolute bg-[#00203FFF] text-white top-7 z-10 border-t-2 border-[#22355be8] w-52 md:w-72 flex-col transition-transform text-sm md:text-lg items-start justify-center  text-start p-5">
                 <li class="border-t-[1px] md:border-none   border-[#22355be8] p-2 w-full"><span class="text-[#ADEFD1FF]" >4</span>mm at <span class="text-[#ADEFD1FF]" >Rs.63</span> per sq.ft</li>
                 <li class="border-t-[1px] md:border-none   border-[#22355be8] p-2 w-full"><span class="text-[#ADEFD1FF]" >5</span>mm at <span class="text-[#ADEFD1FF]" >Rs.76</span> per sq.ft</li>
@@ -227,7 +231,7 @@
           
           </div>
           <a href="contact.html">
-            <button class="p-2 mt-12 px-4 text-[#00203FFF] w-44 capitalize text-sm xl:text-base  font-medium rounded-md bg-[#79eeb9] hover:bg-[#5fe6a9] active:bg-[#6febb3] focus:outline-none ">
+            <button data-aos="fade-up" class="p-2 mt-12 px-4 text-[#00203FFF] w-44 capitalize text-sm xl:text-base  font-medium rounded-md bg-[#79eeb9] hover:bg-[#5fe6a9] active:bg-[#6febb3] focus:outline-none ">
               Enquiry
             </button>
           </a> 
@@ -237,10 +241,10 @@
     <section id="SecendSection" class="flex flex-col items-center justify-center  w-auto  h-auto px-5  md:px-12 lg:px-14 xl:px-24 py-12 md:py-32">
       <div class="space-y-12 flex flex-col items-center w-full md:w-[600px] lg:w-[750px] h-auto justify-center">
         <div class="relative w-full h-full ">
-          <img id="img1" class="max-h-32  w-full object-cover transition-all  rounded" src="https://images.adsttc.com/media/images/6081/91ee/f91c/8133/5700/001c/newsletter/architectural-finish-900x450-email-asset-arcit18.jpg?1619104231" alt="">
-          <h2 class="absolute top-0 p-1 md:p-3 pl-3 md:pl-5 text-sm md:text-base lg:text-xl w-full bg-black bg-opacity-70 font-normal md:font-medium text-[#ADEFD1FF] ">Color Glass</h2>
-          <ion-icon id="imgArrow1" class="absolute transition-all  flex cursor-pointer -bottom-4 text-enter w-full bg-black text-white text-lg md:text-2xl py-0.5 md:py-1" name="chevron-down-outline"></ion-icon>
-          <ion-icon id="imgArrow11" class="absolute hidden transition-all  cursor-pointer -bottom-4 text-enter w-full bg-black text-white text-lg md:text-2xl py-0.5 md:py-1" name="chevron-up-outline"></ion-icon>
+          <img data-aos="fade-up" id="img1" class="max-h-32  w-full object-cover transition-all  rounded" src="https://images.adsttc.com/media/images/6081/91ee/f91c/8133/5700/001c/newsletter/architectural-finish-900x450-email-asset-arcit18.jpg?1619104231" alt="">
+          <h2 data-aos="fade-up" class="absolute top-0 p-1 md:p-3 pl-3 md:pl-5 text-sm md:text-base lg:text-xl w-full bg-black bg-opacity-70 font-normal md:font-medium text-[#ADEFD1FF] ">Color Glass</h2>
+          <ion-icon data-aos="fade-up" id="imgArrow1" class="absolute transition-all  flex cursor-pointer -bottom-4 text-enter w-full bg-black text-white text-lg md:text-2xl py-0.5 md:py-1" name="chevron-down-outline"></ion-icon>
+          <ion-icon data-aos="fade-up" id="imgArrow11" class="absolute hidden transition-all  cursor-pointer -bottom-4 text-enter w-full bg-black text-white text-lg md:text-2xl py-0.5 md:py-1" name="chevron-up-outline"></ion-icon>
         </div>
         <script>
           const imgArrow1 = document.querySelector("#imgArrow1")
@@ -267,10 +271,10 @@
           })
         </script>
         <div class="relative w-full h-full ">
-          <img id="img2" class="max-h-32  w-full object-covertransition-all  rounded" src="https://www.archi-living.com/wp-content/uploads/Cattelan_Italia_19_manja_potpis_resize.jpg" alt="">
-          <h2 class="absolute top-0 p-1 md:p-3 pl-3 md:pl-5 text-sm md:text-base lg:text-xl w-full bg-black bg-opacity-70 font-normal md:font-medium text-[#ADEFD1FF] ">Mirror Glass</h2>
-          <ion-icon id="imgArrow2" class="absolute transition-all  flex cursor-pointer -bottom-4 text-enter w-full bg-black text-white text-lg md:text-2xl py-0.5 md:py-1" name="chevron-down-outline"></ion-icon>
-          <ion-icon id="imgArrow22" class="absolute hidden transition-all  cursor-pointer -bottom-4 text-enter w-full bg-black text-white text-lg md:text-2xl py-0.5 md:py-1" name="chevron-up-outline"></ion-icon>
+          <img data-aos="fade-up" id="img2" class="max-h-32  w-full object-covertransition-all  rounded" src="https://www.archi-living.com/wp-content/uploads/Cattelan_Italia_19_manja_potpis_resize.jpg" alt="">
+          <h2 data-aos="fade-up" class="absolute top-0 p-1 md:p-3 pl-3 md:pl-5 text-sm md:text-base lg:text-xl w-full bg-black bg-opacity-70 font-normal md:font-medium text-[#ADEFD1FF] ">Mirror Glass</h2>
+          <ion-icon data-aos="fade-up" id="imgArrow2" class="absolute transition-all  flex cursor-pointer -bottom-4 text-enter w-full bg-black text-white text-lg md:text-2xl py-0.5 md:py-1" name="chevron-down-outline"></ion-icon>
+          <ion-icon data-aos="fade-up" id="imgArrow22" class="absolute hidden transition-all  cursor-pointer -bottom-4 text-enter w-full bg-black text-white text-lg md:text-2xl py-0.5 md:py-1" name="chevron-up-outline"></ion-icon>
         </div>
         <script>
           const imgArrow2 = document.querySelector("#imgArrow2")
@@ -297,10 +301,10 @@
           })
     </script>
         <div class="relative w-full h-full ">
-          <img id="img3" class="max-h-32 w-full object-cover transition-all  rounded" src="https://www.aisglass.com/wp-content/uploads/2021/06/1-1.jpg" alt="">
-          <h2 class="absolute top-0 p-1 md:p-3 pl-3 md:pl-5 text-sm md:text-base lg:text-xl w-full bg-black bg-opacity-70 font-normal md:font-medium text-[#ADEFD1FF] ">Claer Glass</h2>
-          <ion-icon id="imgArrow3" class="absolute transition-all  flex cursor-pointer -bottom-4 text-enter w-full bg-black text-white text-lg md:text-2xl py-0.5 md:py-1" name="chevron-down-outline"></ion-icon>
-          <ion-icon id="imgArrow33" class="absolute hidden transition-all  cursor-pointer -bottom-4 text-enter w-full bg-black text-white text-lg md:text-2xl py-0.5 md:py-1" name="chevron-up-outline"></ion-icon>
+          <img data-aos="fade-up" id="img3" class="max-h-32 w-full object-cover transition-all  rounded" src="https://www.aisglass.com/wp-content/uploads/2021/06/1-1.jpg" alt="">
+          <h2 data-aos="fade-up" class="absolute top-0 p-1 md:p-3 pl-3 md:pl-5 text-sm md:text-base lg:text-xl w-full bg-black bg-opacity-70 font-normal md:font-medium text-[#ADEFD1FF] ">Claer Glass</h2>
+          <ion-icon data-aos="fade-up" id="imgArrow3" class="absolute transition-all  flex cursor-pointer -bottom-4 text-enter w-full bg-black text-white text-lg md:text-2xl py-0.5 md:py-1" name="chevron-down-outline"></ion-icon>
+          <ion-icon data-aos="fade-up" id="imgArrow33" class="absolute hidden transition-all  cursor-pointer -bottom-4 text-enter w-full bg-black text-white text-lg md:text-2xl py-0.5 md:py-1" name="chevron-up-outline"></ion-icon>
         </div>
       </div>
       <script>
@@ -429,11 +433,11 @@
    </script>
     <section id="thirdSection" class="flex flex-col  items-center justify-center  w-full h-auto  px-5  md:px-12 lg:px-14 xl:px-24 pb-12 md:py-16">
       <div class="w-full md:w-[600px] lg:w-[750px] text-[#00203FFF] h-full flex flex-col items-center  py-3 md:py-8  px-5 md:px-12 text-center  justify-center">
-        <h2 class="text-[#] text-2xl font-medium md:text-3xl lg:text-4xl xl:text-5xl">Interior Accessories</h2>
-        <h2 class="text-[#] mt-5 text-xs font-light md:text-sm lg:text-lg xl:text-base">Glass patch fittings, basket, lifeon 303 grade glass patches (all types), lock, handle, slider, hinches, fevicol, heatx, silicon, etc.</h2>
+        <h2 data-aos="fade-up" class="text-[#] text-2xl font-medium md:text-3xl lg:text-4xl xl:text-5xl">Interior Accessories</h2>
+        <h2 data-aos="fade-up" class="text-[#] mt-5 text-xs font-light md:text-sm lg:text-lg xl:text-base">Glass patch fittings, basket, lifeon 303 grade glass patches (all types), lock, handle, slider, hinches, fevicol, heatx, silicon, etc.</h2>
        </div>
-        <img class="w-full md:w-[600px] lg:w-[750px] h-auto mt-5"  src="/img/accessories-removebg-preview.png" alt="">
-        <img  class="w-full h-full mt-10" src="/img/22-removebg-preview.png" alt="">
+        <img data-aos="fade-up" class="w-full md:w-[600px] lg:w-[750px] h-auto mt-5"  src="/img/accessories-removebg-preview.png" alt="">
+        <img data-aos="fade-up"  class="w-full h-full mt-10" src="/img/22-removebg-preview.png" alt="">
       </div>
     </section>
     <footer  id="fourthSection" class="w-full h-auto  bg-[#00203FFF]">
@@ -517,5 +521,8 @@
     document.documentElement.scrollTop = 0;
   }
 </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="/script.js"></script>
 </body>
 </html>

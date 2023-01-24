@@ -6,11 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kids Room | Raha Living</title>
         <link rel="icon" href="https://o.remove.bg/downloads/b2821016-4437-44ec-8d35-c761a20c7f10/logo_raha_living-removebg-preview.png" type="image/icon type">
-        <script src="https://cdn.tailwindcss.com"></script>       <!-- <link rel="stylesheet" href="home.css" type="text/css"> -->
-       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <!-- // scroll Animation link // -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <!-- tailwind link -->
+       <script src="https://cdn.tailwindcss.com"></script>   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+       <!-- font link -->
        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Cairo+Play:wght@300;400&family=Noto+Kufi+Arabic:wght@300;400;500&family=Readex+Pro:wght@300;400&family=Reem+Kufi&family=Roboto+Condensed:ital,wght@1,300&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
-    <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+       <!-- ion iconic link  -->
+       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <!-- image sliding link  -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 
     <!-- Demo styles -->
     <style>
@@ -222,56 +227,65 @@
       <section id="secendSection" class="flex  w-full h-auto  items-center    justify-center">
         <div class="flex flex-col w-full md:w-[750px] items-center justify-center  h-auto px-5  md:px-12 lg:px-14 xl:px-24 py-12 md:py-32">
           <div class=" w-full   h-auto flex flex-col items-center justify-center">
-            <h2 class="text-4xl md:text-5xl xl:text-6xl font-medium capitalize text-[#00203FFF] text-center">Kids Room</h2>
-            <p class="mt-10 text-center font-light">You know the modern formula already: clean, open, minimal, functional. But you may not know how to make the sleek design aesthetic have character, be family-friendly, or even a little bit colorful. Whether you want to go full-on mid-century or have something a little more contemporary, let these modern kitchens inspire you to think outside the farmhouse box.</p>
+            <h2  data-aos="fade-up" class="text-4xl md:text-5xl xl:text-6xl font-medium capitalize text-[#00203FFF] text-center">Kids Room</h2>
+            <p  data-aos="fade-up" class="mt-10 text-center font-light">You know the modern formula already: clean, open, minimal, functional. But you may not know how to make the sleek design aesthetic have character, be family-friendly, or even a little bit colorful. Whether you want to go full-on mid-century or have something a little more contemporary, let these modern kitchens inspire you to think outside the farmhouse box.</p>
           </div>
-          <div class="h-auto flex items-center justify-center md:justify-end mt-20" >
+          <div class="h-auto flex flex-col items-center justify-center md:justify-end mt-32" >
+            <div class="flex w-full pb-7 items-center justify-start">
+              <div class="relative space-x-1 flex text-[#00203FFF] text-xs md:text-sm  font-medium ">
+                 <p data-aos="fade-up" class="  text-sm"> Tap image to view</p>
+                 <span data-aos="fade-up" class="flex  h-3 w-3">
+                    <span class="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-red-600 -z-10 opacity-75 "></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500 "></span>
+                 </span>
+                </div>
+             </div>
             <div id="image-container" class="flex flex-wrap md:grid md:grid-cols-[8rem,8rem,8rem] md:grid-rows-[8rem,8rem] xl:grid-cols-[10rem,10rem,10rem] xl:grid-rows-[10rem,10rem] h-auto gap-3 xl:gap-5 w-full items-center justify-center md:justify-end">
-                <div class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                <div  data-aos="fade-up" class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                 <img  class=" image opacity-60w-full h-full object-fill rounded-xl" src="https://images.indianexpress.com/2018/07/decorate-child-room5.jpg" alt="">
                 <!-- <div class="w-full h-full absolute inset-0 hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70 rounded-xl transition-opacity flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="bag-handle-outline"></ion-icon></div> -->
                 </div>
-                <div class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                <div  data-aos="fade-up" class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                 <img  class=" image opacity-60w-full h-full object-fill rounded-xl" src="https://edge.curalate.com/v1/img/XnQPgAqh7NmcDz7BuP1DMhndgb9YuuppcmCoHMSMb8Y=/w/1080" alt="">
                 <!-- <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition-opacity flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="bag-handle-outline"></ion-icon></div> -->
                 </div>
-                <div class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                <div  data-aos="fade-up" class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                 <img  class=" image opacity-60w-full h-full object-fill rounded-xl" src="https://images.wsj.net/im-371870?width=1280&size=1" alt="">
                 <!-- <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition-opacity flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="bag-handle-outline"></ion-icon></div> -->
                 </div>
-                <div class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                <div  data-aos="fade-up" class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                 <img  class=" image opacity-60w-full h-full object-fill rounded-xl" src="https://www.decorilla.com/online-decorating/wp-content/uploads/2020/09/Comic-themed-kids-interior-design.jpeg" alt="">
                 <!-- <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition-opacity flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="bag-handle-outline"></ion-icon></div> -->
                 </div>
-                <div class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                <div  data-aos="fade-up" class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                 <img  class=" image opacity-60w-full h-full object-fill rounded-xl" src="https://static.boredpanda.com/blog/wp-content/uploads/2014/05/creative-children-room-ideas-11.jpg" alt="">
                 <!-- <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition-opacity flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="bag-handle-outline"></ion-icon></div> -->
                 </div>
-                <div class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                <div  data-aos="fade-up" class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                 <img  class=" image opacity-60w-full h-full object-fill rounded-xl" src="https://st.hzcdn.com/simgs/77d1263f078d90d4_4-6120/modern-kids.jpg" alt="">
                 <!-- <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition-opacity flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="bag-handle-outline"></ion-icon></div> -->
                 </div>
-                <div class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                <div  data-aos="fade-up" class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                 <img  class=" image opacity-60w-full h-full object-fill rounded-xl" src="http://cdn.home-designing.com/wp-content/uploads/2010/06/Modern-Kids-Bedroom.jpg" alt="">
                 <!-- <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition-opacity flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="bag-handle-outline"></ion-icon></div> -->
                 </div>
-                <div class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                <div  data-aos="fade-up" class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                 <img  class=" image opacity-60w-full h-full object-fill rounded-xl" src="http://cdn.home-designing.com/wp-content/uploads/2010/06/Boys-Bedroom-on-wheels.jpg" alt="">
                 <!-- <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition-opacity flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="bag-handle-outline"></ion-icon></div> -->
                 </div>
-                <div class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                <div  data-aos="fade-up" class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                 <img  class=" image opacity-60w-full h-full object-fill rounded-xl" src="http://cdn.home-designing.com/wp-content/uploads/2010/06/Floral-Wall-Art.jpg" alt="">
                 <!-- <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition-opacity flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="bag-handle-outline"></ion-icon></div> -->
                 </div>
-                <div class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                <div  data-aos="fade-up" class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                 <img  class=" image opacity-60w-full h-full object-fill rounded-xl" src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2019/07/pjimage-1563526640.jpg" alt="">
                 <!-- <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition-opacity flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="bag-handle-outline"></ion-icon></div> -->
                 </div>
-                <div class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                <div  data-aos="fade-up" class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                 <img  class=" image opacity-60w-full h-full object-fill rounded-xl" src="https://www.ikea.com/images/a-girl-sitting-on-a-brightly-coloured-rug-in-a-bedroom-conta-d5580495c459022927ff5e8b89f28c2a.jpg" alt="">
                 <!-- <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition-opacity flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="bag-handle-outline"></ion-icon></div> -->
                 </div>
-                <div class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
+                <div  data-aos="fade-up" class="relative cursor-pointer bg-[#000000d1] shadow-[#00203FFF]  w-32 h-32 xl:w-40 xl:h-40 shadow-md rounded-xl">
                 <img  class=" image opacity-60w-full h-full object-fill rounded-xl" src="https://www.ikea.com/images/a-large-kids-bedroom-furnished-with-a-pine-bed-with-posts-an-3b2f31dfc62dc93a73876890e70dfd44.jpg" alt="">
                 <!-- <div class="w-full h-full absolute inset-0  hover:bg-[#000000a9] active:bg-black opacity-0 hover:opacity-70  active:opacity-70  rounded-xl transition-opacity flex items-center justify-center p-11 xl:p-14"><ion-icon class=" z-10 w-full h-full   text-white " name="bag-handle-outline"></ion-icon></div> -->
                 </div>
@@ -300,7 +314,7 @@
             </div>
         </div>
         <a href="contact.html">
-          <button class="p-2 mt-12 px-4 text-[#00203FFF] w-44 capitalize text-sm xl:text-base  font-medium rounded-md bg-[#79eeb9] hover:bg-[#5fe6a9] active:bg-[#6febb3] focus:outline-none ">
+          <button  data-aos="fade-up" class="p-2 mt-12 px-4 text-[#00203FFF] w-44 capitalize text-sm xl:text-base  font-medium rounded-md bg-[#79eeb9] hover:bg-[#5fe6a9] active:bg-[#6febb3] focus:outline-none ">
             Enquiry
           </button>
         </a> 
@@ -419,5 +433,8 @@ document.body.scrollTop = 0;
 document.documentElement.scrollTop = 0;
 }
 </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="/script.js"></script>  data-aos="fade-up"
   </body>
 </html>
